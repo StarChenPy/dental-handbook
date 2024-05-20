@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "keepyourmouthhealthy:toothbrush_head"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    " RH",
+    "RQR",
+    "QR "
+  ],
+  "result": {
+    "item": "keepyourmouthhealthy:redstone_toothbrush"
+  }
+}

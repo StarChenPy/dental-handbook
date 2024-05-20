@@ -1,0 +1,42 @@
+{
+  "itemGroup.keepyourmouthhealthy.tab": "Keep Your Mouth Clean",
+
+  "tooltip.keepyourmouthhealthy.redstone_toothbrush": "§7This is Redstone Technology!",
+
+  "item.keepyourmouthhealthy.wooden_toothbrush": "Wooden Toothbrush",
+  "item.keepyourmouthhealthy.redstone_toothbrush": "Redstone Toothbrush",
+
+  "item.keepyourmouthhealthy.charcoal_toothpaste": "Charcoal Toothpaste",
+  "item.keepyourmouthhealthy.flint_toothpaste": "Flint Toothpaste",
+  "item.keepyourmouthhealthy.quartz_toothpaste": "Quartz Toothpaste",
+  "item.keepyourmouthhealthy.redstone_toothpaste": "Redstone Toothpaste",
+  "item.keepyourmouthhealthy.lapis_lazuli_toothpaste": "Lapis Lazuli Toothpaste",
+  "item.keepyourmouthhealthy.golden_apple_toothpaste": "Golden Apple Toothpaste",
+
+  "item.keepyourmouthhealthy.bristle": "Bristle",
+  "item.keepyourmouthhealthy.toothbrush_head": "Toothbrush Head",
+  "item.keepyourmouthhealthy.toothpaste_tube": "Toothbrush Tube",
+
+  "effect.keepyourmouthhealthy.tooth_decay": "Tooth Decay",
+  "effect.keepyourmouthhealthy.injury_oral": "Injury Oral",
+  "effect.keepyourmouthhealthy.clean_oral": "Clean Oral",
+
+  "death.attack.oral_bleeding": "%1$s punctured the oral artery while eating.",
+
+  "advancements.keepyourmouthhealthy.root": "Tooth Decay",
+  "advancements.keepyourmouthhealthy.root.desc": "Oh, it's cavities! It's time to love your mouth!",
+
+  "advancements.keepyourmouthhealthy.massive_bleeding": "Massive Bleeding",
+  "advancements.keepyourmouthhealthy.massive_bleeding.desc": "Eating with at least 3 level of oral injury. It really hurts!",
+
+  "advancements.keepyourmouthhealthy.teeth_whitening": "Teeth Whitening",
+  "advancements.keepyourmouthhealthy.teeth_whitening.desc": "First brushing teeth",
+
+  "advancements.keepyourmouthhealthy.do_not_open_your_mouth": "Don't open your mouth",
+  "advancements.keepyourmouthhealthy.do_not_open_your_mouth.desc": "Obtain at least level 4 tooth decay",
+
+  "advancements.keepyourmouthhealthy.redstone_oscillation": "Redstone Oscillation",
+  "advancements.keepyourmouthhealthy.redstone_oscillation.desc": "How did it vibrate?!",
+
+  "sounds.keepyourmouthhealthy.brushing_teeth_sound": "Brushing Teeth"
+}
