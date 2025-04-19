@@ -1,0 +1,45 @@
+{
+  "itemGroup.dental_handbook.tab": "歯科手帳",
+
+  "tooltip.dental_handbook.redstone_toothbrush": "§7これがレッドストーン・テクノロジーだ",
+
+  "item.dental_handbook.wooden_toothbrush": "木製歯ブラシ",
+  "item.dental_handbook.redstone_toothbrush": "レッドストーン・パワー歯ブラシ",
+
+  "item.dental_handbook.charcoal_toothpaste": "炭の歯磨き粉",
+  "item.dental_handbook.flint_toothpaste": "フリントの歯磨き粉",
+  "item.dental_handbook.quartz_toothpaste": "ネザークォーツ歯磨き粉",
+  "item.dental_handbook.redstone_toothpaste": "レッドストーン歯磨き粉",
+  "item.dental_handbook.lapis_lazuli_toothpaste": "ラピスラズリ歯磨き粉",
+  "item.dental_handbook.golden_apple_toothpaste": "金のリンゴ歯磨き粉",
+
+  "item.dental_handbook.handbook": "歯科手帳",
+  "item.dental_handbook.bristle": "猪のたてがみ",
+  "item.dental_handbook.toothbrush_head": "歯ブラシのヘッド",
+  "item.dental_handbook.toothpaste_tube": "歯磨き粉の皮",
+
+  "effect.dental_handbook.tooth_decay": "虫歯",
+  "effect.dental_handbook.injury_oral": "口腔内の損傷",
+  "effect.dental_handbook.clean_oral": "クリーンマウス",
+
+  "death.attack.oral_bleeding": "%1$s は食事中に動脈をやられた",
+
+  "advancements.dental_handbook.root": "虫歯",
+  "advancements.dental_handbook.root.desc": "ああ、虫歯だ！ お口が好きになる時です！",
+
+  "advancements.dental_handbook.massive_bleeding": "出血",
+  "advancements.dental_handbook.massive_bleeding.desc": "少なくともグレード3の口腔損傷では、食事をするのも痛い！",
+
+  "advancements.dental_handbook.teeth_whitening": "歯のホワイトニング",
+  "advancements.dental_handbook.teeth_whitening.desc": "初めての歯磨き",
+
+  "advancements.dental_handbook.do_not_open_your_mouth": "今は口を開くな",
+  "advancements.dental_handbook.do_not_open_your_mouth.desc": "最低4段階の虫歯を獲得すること",
+
+  "advancements.dental_handbook.redstone_oscillation": "レッドストーンしんどう",
+  "advancements.dental_handbook.redstone_oscillation.desc": "どうやって振動したの?!",
+
+  "sounds.dental_handbook.brushing_teeth_sound": "歯を磨く",
+
+  "handbook.dental_handbook.landing_text": "歯が痛くなってきた？虫歯になると食事が遅くなり、重症になると食べるたびにダメージを受けることも……でも安心して！『歯科ハンドブック』が虫歯の対処法を教えてくれるから、痛みのない食事を取り戻せるよ！"
+}

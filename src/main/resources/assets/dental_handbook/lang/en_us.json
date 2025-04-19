@@ -1,0 +1,45 @@
+{
+  "itemGroup.dental_handbook.tab": "Dental Handbook",
+
+  "tooltip.dental_handbook.redstone_toothbrush": "§7This is Redstone Technology!",
+
+  "item.dental_handbook.wooden_toothbrush": "Wooden Toothbrush",
+  "item.dental_handbook.redstone_toothbrush": "Redstone Toothbrush",
+
+  "item.dental_handbook.charcoal_toothpaste": "Charcoal Toothpaste",
+  "item.dental_handbook.flint_toothpaste": "Flint Toothpaste",
+  "item.dental_handbook.quartz_toothpaste": "Quartz Toothpaste",
+  "item.dental_handbook.redstone_toothpaste": "Redstone Toothpaste",
+  "item.dental_handbook.lapis_lazuli_toothpaste": "Lapis Lazuli Toothpaste",
+  "item.dental_handbook.golden_apple_toothpaste": "Golden Apple Toothpaste",
+
+  "item.dental_handbook.handbook": "Dental Handbook",
+  "item.dental_handbook.bristle": "Bristle",
+  "item.dental_handbook.toothbrush_head": "Toothbrush Head",
+  "item.dental_handbook.toothpaste_tube": "Toothbrush Tube",
+
+  "effect.dental_handbook.tooth_decay": "Tooth Decay",
+  "effect.dental_handbook.injury_oral": "Injury Oral",
+  "effect.dental_handbook.clean_oral": "Clean Oral",
+
+  "death.attack.oral_bleeding": "%1$s punctured the oral artery while eating.",
+
+  "advancements.dental_handbook.root": "Tooth Decay",
+  "advancements.dental_handbook.root.desc": "Oh, it's cavities! It's time to love your mouth!",
+
+  "advancements.dental_handbook.massive_bleeding": "Massive Bleeding",
+  "advancements.dental_handbook.massive_bleeding.desc": "Eating with at least 3 level of oral injury. It really hurts!",
+
+  "advancements.dental_handbook.teeth_whitening": "Teeth Whitening",
+  "advancements.dental_handbook.teeth_whitening.desc": "First brushing teeth",
+
+  "advancements.dental_handbook.do_not_open_your_mouth": "Don't open your mouth",
+  "advancements.dental_handbook.do_not_open_your_mouth.desc": "Obtain at least level 4 tooth decay",
+
+  "advancements.dental_handbook.redstone_oscillation": "Redstone Oscillation",
+  "advancements.dental_handbook.redstone_oscillation.desc": "How did it vibrate?!",
+
+  "sounds.dental_handbook.brushing_teeth_sound": "Brushing Teeth",
+
+  "handbook.dental_handbook.landing_text": "Is your tooth starting to ache? Cavities will slow down your eating, and in severe cases, damage when you take a bite... But don’t worry — The Dental Handbook will teach you how to deal with tooth decay and enjoy pain-free meals once again!",
+}

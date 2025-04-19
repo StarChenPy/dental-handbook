@@ -1,0 +1,28 @@
+{
+  "parent": "dental_handbook:root",
+  "display": {
+    "title": {
+      "translate": "advancements.dental_handbook.do_not_open_your_mouth"
+    },
+    "description": {
+      "translate": "advancements.dental_handbook.do_not_open_your_mouth.desc"
+    },
+    "icon": {
+      "item": "minecraft:wither_rose"
+    }
+  },
+  "criteria": {
+    "do_not_open_your_mouth": {
+      "trigger": "minecraft:effects_changed",
+      "conditions": {
+        "effects": {
+          "dental_handbook:tooth_decay": {
+            "amplifier": {
+              "min": 3
+            }
+          }
+        }
+      }
+    }
+  }
+}

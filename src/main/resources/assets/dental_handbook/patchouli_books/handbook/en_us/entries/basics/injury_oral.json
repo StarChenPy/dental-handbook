@@ -1,0 +1,15 @@
+{
+  "name": "handbook.dental_handbook.entry.injury_oral",
+  "category": "dental_handbook:basics",
+  "icon": "dental_handbook:textures/mob_effect/injury_oral.png",
+  "pages": [
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.injury_oral.page0"
+    },
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.injury_oral.page1"
+    }
+  ]
+}

@@ -1,6 +1,0 @@
-{
-  "parent": "keepyourmouthhealthy:item/toothpaste",
-  "textures": {
-    "layer0": "keepyourmouthhealthy:item/golden_apple_toothpaste"
-  }
-}

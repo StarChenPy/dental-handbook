@@ -1,0 +1,12 @@
+{
+  "type": "patchouli:shapeless_book_recipe",
+  "ingredients": [
+    {
+      "item": "dental_handbook:bristle"
+    },
+    {
+      "item": "minecraft:book"
+    }
+  ],
+  "book": "dental_handbook:handbook"
+}

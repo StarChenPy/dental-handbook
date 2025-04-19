@@ -1,0 +1,24 @@
+{
+  "parent": "dental_handbook:teeth_whitening",
+  "display": {
+    "title": {
+      "translate": "advancements.dental_handbook.redstone_oscillation"
+    },
+    "description": {
+      "translate": "advancements.dental_handbook.redstone_oscillation.desc"
+    },
+    "icon": {
+      "item": "dental_handbook:redstone_toothbrush"
+    }
+  },
+  "criteria": {
+    "teeth_whitening": {
+      "trigger": "dental_handbook:after_brushing_teeth",
+      "conditions": {
+        "item": {
+          "items": ["dental_handbook:redstone_toothbrush"]
+        }
+      }
+    }
+  }
+}

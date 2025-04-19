@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "dental_handbook:toothpaste_tube"
+    },
+    "Q": {
+      "item": "minecraft:quartz"
+    }
+  },
+  "pattern": [
+    " Q ",
+    "QTQ",
+    " Q "
+  ],
+  "result": {
+    "item": "dental_handbook:quartz_toothpaste"
+  }
+}

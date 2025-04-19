@@ -1,0 +1,21 @@
+{
+  "name": "handbook.dental_handbook.entry.handbook",
+  "category": "dental_handbook:basics",
+  "icon": "patchouli:guide_book",
+  "priority": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.handbook.page0"
+    },
+    {
+      "type": "crafting",
+      "recipe": "dental_handbook:handbook",
+      "text": "handbook.dental_handbook.entry.handbook.page1"
+    },
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.handbook.page2"
+    }
+  ]
+}

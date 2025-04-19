@@ -1,0 +1,45 @@
+{
+  "itemGroup.dental_handbook.tab": "牙科手册",
+
+  "tooltip.dental_handbook.redstone_toothbrush": "§7這！就！是！紅石科技！",
+
+  "item.dental_handbook.wooden_toothbrush": "木牙刷",
+  "item.dental_handbook.redstone_toothbrush": "紅石動力牙刷",
+
+  "item.dental_handbook.charcoal_toothpaste": "木炭牙膏",
+  "item.dental_handbook.flint_toothpaste": "燧石牙膏",
+  "item.dental_handbook.quartz_toothpaste": "石英牙膏",
+  "item.dental_handbook.redstone_toothpaste": "紅石牙膏",
+  "item.dental_handbook.lapis_lazuli_toothpaste": "青金石牙膏",
+  "item.dental_handbook.golden_apple_toothpaste": "金蘋果牙膏",
+
+  "item.dental_handbook.handbook": "牙科手册",
+  "item.dental_handbook.bristle": "豬鬃",
+  "item.dental_handbook.toothbrush_head": "牙刷頭",
+  "item.dental_handbook.toothpaste_tube": "牙膏皮",
+
+  "effect.dental_handbook.tooth_decay": "蛀牙",
+  "effect.dental_handbook.injury_oral": "口腔受損",
+  "effect.dental_handbook.clean_oral": "潔淨口腔",
+
+  "death.attack.oral_bleeding": "%1$s 在吃東西的時候被紮爆了動脈",
+
+  "advancements.dental_handbook.root": "蛀牙",
+  "advancements.dental_handbook.root.desc": "哦，是蛀牙！是時候愛護下你的嘴了！",
+
+  "advancements.dental_handbook.massive_bleeding": "大出血",
+  "advancements.dental_handbook.massive_bleeding.desc": "在至少3級的口腔損傷下吃東西，真疼！",
+
+  "advancements.dental_handbook.teeth_whitening": "牙齒美白",
+  "advancements.dental_handbook.teeth_whitening.desc": "第一次刷牙",
+
+  "advancements.dental_handbook.do_not_open_your_mouth": "現在不要張嘴",
+  "advancements.dental_handbook.do_not_open_your_mouth.desc": "獲得至少4級的蛀牙",
+
+  "advancements.dental_handbook.redstone_oscillation": "紅石動盪",
+  "advancements.dental_handbook.redstone_oscillation.desc": "它怎麼震起來的?!",
+
+  "sounds.dental_handbook.brushing_teeth_sound": "刷牙",
+
+  "handbook.dental_handbook.landing_text": "你的牙開始痛了嗎？蛀牙會讓你進食變得緩慢，嚴重時甚至吃東西時還會受到傷害……別擔心，《牙科手冊》會教你如何處理蛀牙，再次享受無痛的美食時光！"
+}

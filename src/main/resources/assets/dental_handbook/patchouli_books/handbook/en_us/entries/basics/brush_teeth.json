@@ -1,0 +1,22 @@
+{
+  "name": "handbook.dental_handbook.entry.brush_teeth",
+  "category": "dental_handbook:basics",
+  "icon": "dental_handbook:wooden_toothbrush",
+  "priority": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.brush_teeth.page0"
+    },
+    {
+      "type": "image",
+      "images": [
+        "dental_handbook:textures/gui/handbook/brush_teeth1.png"
+      ]
+    },
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.brush_teeth.page2"
+    }
+  ]
+}

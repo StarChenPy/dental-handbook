@@ -1,0 +1,6 @@
+{
+  "parent": "dental_handbook:item/toothpaste",
+  "textures": {
+    "layer0": "dental_handbook:item/lapis_lazuli_toothpaste"
+  }
+}
