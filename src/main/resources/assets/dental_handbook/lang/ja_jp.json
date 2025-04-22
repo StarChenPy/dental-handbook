@@ -41,5 +41,77 @@
 
   "sounds.dental_handbook.brushing_teeth_sound": "歯を磨く",
 
-  "handbook.dental_handbook.landing_text": "歯が痛くなってきた？虫歯になると食事が遅くなり、重症になると食べるたびにダメージを受けることも……でも安心して！『歯科ハンドブック』が虫歯の対処法を教えてくれるから、痛みのない食事を取り戻せるよ！"
+  "handbook.dental_handbook.landing_text": "歯が痛み始めましたか？$(p)心配無用！『歯科ハンドブック』で虫歯対策を学び、痛みのない食事を再開しましょう！",
+
+  "handbook.dental_handbook.category.basics": "基本",
+  "handbook.dental_handbook.category.basics.desc": "このMODの基本メカニズムを解説。読まないと遊べませんよ～",
+
+  "handbook.dental_handbook.entry.handbook": "『歯科ハンドブック』について",
+  "handbook.dental_handbook.entry.handbook.page0": "    $(item)歯科ハンドブック$()には歯に関する全ての知識が記載されています。$(p)    予想通り、すべての情報はここに集約されています。あなたは必要ないかも知れませんが、誰かが使うでしょうね？(●´ω｀●)ゞ$(p)    口の中で何か起きて困惑した時、ぜひこの本を開いてみてください！",
+  "handbook.dental_handbook.entry.handbook.page1": "『歯科ハンドブック』のクラフトは超簡単！",
+  "handbook.dental_handbook.entry.handbook.page2": "    $(o)斜体$()で書かれた項目は$(thing)基本$()エントリです。口腔問題に関する基礎知識で、優先的に読むことを推奨します。ほとんどの章に含まれているので要注意。$(p)    ※この説明文はほぼBotaniaからパクりました",
+
+  "handbook.dental_handbook.entry.tooth_decay": "虫歯",
+  "handbook.dental_handbook.entry.tooth_decay.page0": "    食べ物を食べた後、時々$(item)虫歯$()が発生することがあります。$(p)    明らかに有害なバフです。牛乳では絶対に解除できません——これは毒ではないからです。$(p)    不幸にも感染した場合：$(item)虫歯$()は自然治癒せず、放置すると永遠に付きまといます。",
+  "handbook.dental_handbook.entry.tooth_decay.page2": "    次に、$(thing)食事速度$()が低下します。数値は$(item)虫歯$()の深刻度に依存。$(p)    最後に、放置するとさらに悪化します。$(p)    歯は死を尊重します——$(thing)死亡時アイテム保持$()が無効の場合、死後に歯は消滅します。逆も同様です。",
+
+  "handbook.dental_handbook.entry.injury_oral": "口腔損傷",
+  "handbook.dental_handbook.entry.injury_oral.page0": "    長期間$(thing)歯磨き$()しないことの代償。$(p)    $(item)虫歯$()が一定以上進行すると、食事時に$(item)口腔損傷$()が発生する可能性があります。$(p)    食事後、口は出血などで明らかに抗議を始め、食事が苦痛な行為に変わります。$(p)    全く愉快ではありません。",
+  "handbook.dental_handbook.entry.injury_oral.page1": "    $(thing)口腔出血$()のダメージは深刻度に依存。防具は$(thing)口腔出血$()に無力です。$(p)    $(strike)ただし意図的にこれで死んだ場合、面白い死亡メッセージが見られます$()",
+
+  "handbook.dental_handbook.entry.clean_oral": "清潔な口腔",
+  "handbook.dental_handbook.entry.clean_oral.page0": "    健康維持の鍵となるバフ$(p)    特定の歯磨き粉で完全な$(thing)歯磨き$()をすると、$(item)清潔な口腔$()効果を獲得。持続時間中は食事で$(item)虫歯$()が発生しません。",
+
+  "handbook.dental_handbook.entry.brush_teeth": "歯磨き",
+  "handbook.dental_handbook.entry.brush_teeth.page0": "    $(item)虫歯$()対策の最も経済的で効果的な方法。数秒で長時間の保護を！$(p)    $(thing)歯磨き$()するには、歯ブラシと歯磨き粉を別々の手に持ち、右クリック長押しで歯ブラシに塗布します。$(p)    その後、塗布済み歯ブラシを右クリック長押しで$(thing)歯磨き$()開始。",
+  "handbook.dental_handbook.entry.brush_teeth.page2": "    当然ながら、$(thing)歯磨き$()には時間がかかり、完了すると清潔な口内を獲得。$(p)    完全な歯磨き後、使用した歯磨き粉に応じて$(item)虫歯$()のレベルを削減可能。",
+
+  "handbook.dental_handbook.category.toothbrush": "歯ブラシ",
+  "handbook.dental_handbook.category.toothbrush.desc": "歯ブラシに関する知識……だけではありません？",
+
+  "handbook.dental_handbook.entry.toothbrush": "歯ブラシ",
+  "handbook.dental_handbook.entry.toothbrush.page0": "    MODのコアアイテムの一つ。虫歯除去の原動力。$(p)    歯ブラシを作成するにはまず$(item)豚の剛毛$()を入手——全ての歯ブラシの基本素材です。$(p)    これを使えば、基本的な歯ブラシを作成し、すぐに食事を守れます。",
+  "handbook.dental_handbook.entry.toothbrush.page1": "豚を倒してドロップ",
+  "handbook.dental_handbook.entry.toothbrush.page2": "    序盤は$(item)木の歯ブラシ$()が最良の選択肢。安価ですが、コア機能——$(thing)歯磨き$()が可能です。$(p)    あぁ……自明なことを書いてしまいました。",
+  "handbook.dental_handbook.entry.toothbrush.page3": "木の歯ブラシのクラフト",
+
+  "handbook.dental_handbook.entry.redstone_toothbrush": "レッドストーン・パワー歯ブラシ",
+  "handbook.dental_handbook.entry.redstone_toothbrush.page0": "    $(item)木の歯ブラシ$()より耐久力が高く、$(thing)歯磨き$()速度が向上。$(p)    振動原理は不明ですが、本質的には普通の歯ブラシ——他用途には使えません。",
+  "handbook.dental_handbook.entry.redstone_toothbrush.page1": "ブラシヘッドのクラフト",
+  "handbook.dental_handbook.entry.redstone_toothbrush.page2": "レッドストーン・パワー歯ブラシのクラフト",
+
+  "handbook.dental_handbook.category.toothpaste": "歯磨き粉",
+  "handbook.dental_handbook.category.toothpaste.desc": "様々な歯磨き粉——あらゆる味揃い！",
+
+  "handbook.dental_handbook.entry.toothpaste": "歯磨き粉",
+  "handbook.dental_handbook.entry.toothpaste.page0": "    MODのコアアイテムの一つ。徹底的な口腔ケアを提供。$(p)    全ての歯磨き粉には$(item)チューブ$()が必要——これ無しでは西洋にエルサレム無し。",
+  "handbook.dental_handbook.entry.toothpaste.page1": "チューブのクラフト",
+  "handbook.dental_handbook.entry.toothpaste.page2": "    $(item)木炭歯磨き粉$()は序盤の強力な味方。材料が簡単で使用感抜群——見た目は悪いですが。$(p)    $(thing)歯磨き$()後、$(item)清潔な口腔$()効果を付与（最大レベル4の$(item)虫歯$()を除去）。$(p)    実際は使用後すすがないと口が黒くなります。",
+  "handbook.dental_handbook.entry.toothpaste.page3": "木炭歯磨き粉のクラフト——1攻1防、最もシンプル",
+  "handbook.dental_handbook.entry.toothpaste.page4": "    $(item)虫歯$()レベルが高すぎる場合、木炭は無力です。他の材料が入手困難なら$(item)火打石歯磨き粉$()を使う必要が。$(p)    $(thing)歯磨き$()後、$(item)虫歯$()を1段階削除（最大レベル4）。$(p)    粗い粒子が口腔を傷めますが、虫歯除去は専門的です。",
+  "handbook.dental_handbook.entry.toothpaste.page5": "火打石歯磨き粉のクラフト",
+
+  "handbook.dental_handbook.entry.golden_apple_toothpaste": "金リンゴ歯磨き粉",
+  "handbook.dental_handbook.entry.golden_apple_toothpaste.page0": "    金リンゴ製の高級歯磨き粉——高価ですが美味しい。$(p)    $(thing)歯磨き$()後、$(item)清潔な口腔$()効果（最大レベル4の$(item)虫歯$()除去）に加え、$(item)再生$()効果を付与。",
+  "handbook.dental_handbook.entry.golden_apple_toothpaste.page1": "金リンゴ歯磨き粉のクラフト——甘い味わい～",
+
+  "handbook.dental_handbook.entry.lapis_lazuli_toothpaste": "ラピスラズリ歯磨き粉",
+  "handbook.dental_handbook.entry.lapis_lazuli_toothpaste.page0": "    $(thing)歯磨き$()後、$(item)清潔な口腔$()効果（最大レベル3の$(item)虫歯$()除去）と$(item)幸運$()を付与。ただし口のエンチャントは不可。",
+  "handbook.dental_handbook.entry.lapis_lazuli_toothpaste.page1": "ラピスラズリ歯磨き粉のクラフト",
+
+  "handbook.dental_handbook.entry.quartz_toothpaste": "クォーツ歯磨き粉",
+  "handbook.dental_handbook.entry.quartz_toothpaste.page0": "    $(thing)歯磨き$()後、$(item)清潔な口腔$()効果（最大レベル4の$(item)虫歯$()除去）。$(p)    強力な虫歯除去＋口腔保護。",
+  "handbook.dental_handbook.entry.quartz_toothpaste.page1": "クォーツ歯磨き粉のクラフト",
+
+  "handbook.dental_handbook.entry.redstone_toothpaste": "レッドストーン歯磨き粉",
+  "handbook.dental_handbook.entry.redstone_toothpaste.page0": "    $(thing)歯磨き$()後、$(item)清潔な口腔$()効果（最大レベル3の$(item)虫歯$()除去）。$(p)    レッドストーン歯ブラシとのコンボ技はありません。",
+  "handbook.dental_handbook.entry.redstone_toothpaste.page1": "レッドストーン歯磨き粉のクラフト",
+
+  "handbook.dental_handbook.category.denture": "入れ歯",
+  "handbook.dental_handbook.category.denture.desc": "強化完了、喰らえ！",
+
+  "handbook.dental_handbook.entry.dental_forceps": "抜歯鉗子（未完成）",
+  "handbook.dental_handbook.entry.dental_forceps.page0": "    歯痛の最終手段。歯が残っている限り、$(item)抜歯鉗子$()で歯を抜きつつ全ての$(item)虫歯$()を除去。$(p)    ただし医療技術が限られているため、ダメージと$(item)口腔損傷$()を付与。$(p)    注意：歯が少ないほど食事速度が低下し、最終的には食事不能に。",
+  "handbook.dental_handbook.entry.dental_forceps.page1": "抜歯鉗子のクラフト",
+  "handbook.dental_handbook.entry.dental_forceps.page2": "    追加効果：モブを攻撃すると時々歯を叩き出します——物理学、すごいでしょ？"
 }

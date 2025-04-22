@@ -1,0 +1,35 @@
+{
+  "name": "handbook.dental_handbook.entry.toothpaste",
+  "category": "dental_handbook:toothpaste",
+  "icon": "dental_handbook:charcoal_toothpaste",
+  "priority": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.toothpaste.page0"
+    },
+    {
+      "type": "crafting",
+      "recipe": "dental_handbook:toothpaste_tube",
+      "text": "handbook.dental_handbook.entry.toothpaste.page1"
+    },
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.toothpaste.page2"
+    },
+    {
+      "type": "crafting",
+      "recipe": "dental_handbook:charcoal_toothpaste",
+      "text": "handbook.dental_handbook.entry.toothpaste.page3"
+    },
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.toothpaste.page4"
+    },
+    {
+      "type": "crafting",
+      "recipe": "dental_handbook:flint_toothpaste",
+      "text": "handbook.dental_handbook.entry.toothpaste.page5"
+    }
+  ]
+}

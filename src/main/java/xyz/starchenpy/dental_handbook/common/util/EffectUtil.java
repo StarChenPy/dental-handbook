@@ -4,7 +4,6 @@ import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
-import xyz.starchenpy.dental_handbook.common.effect.ModEffects;
 
 public class EffectUtil {
     public static void updateEffect(LivingEntity entity, MobEffectInstance effect, int amplifier) {
@@ -22,7 +21,7 @@ public class EffectUtil {
             entity.removeEffect(effect.getEffect());
 
             if (amplifier >= 0) {
-                MobEffectInstance newEffect = new MobEffectInstance(ModEffects.TOOTH_DECAY.get(), duration, amplifier);
+                MobEffectInstance newEffect = new MobEffectInstance(effect.getEffect(), duration, amplifier, effect.isAmbient(), effect.isVisible(), effect.showIcon());
                 entity.addEffect(newEffect);
             }
         } else {

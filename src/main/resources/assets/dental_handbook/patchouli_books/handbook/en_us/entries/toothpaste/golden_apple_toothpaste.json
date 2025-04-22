@@ -1,0 +1,16 @@
+{
+  "name": "handbook.dental_handbook.entry.golden_apple_toothpaste",
+  "category": "dental_handbook:toothpaste",
+  "icon": "dental_handbook:golden_apple_toothpaste",
+  "pages": [
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.golden_apple_toothpaste.page0"
+    },
+    {
+      "type": "crafting",
+      "recipe": "dental_handbook:golden_apple_toothpaste",
+      "text": "handbook.dental_handbook.entry.golden_apple_toothpaste.page1"
+    }
+  ]
+}

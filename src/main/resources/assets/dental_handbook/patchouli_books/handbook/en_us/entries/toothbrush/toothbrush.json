@@ -1,0 +1,27 @@
+{
+  "name": "handbook.dental_handbook.entry.toothbrush",
+  "category": "dental_handbook:toothbrush",
+  "icon": "dental_handbook:wooden_toothbrush",
+  "priority": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.toothbrush.page0"
+    },
+    {
+      "type": "spotlight",
+      "item": "dental_handbook:bristle",
+      "link_recipe": true,
+      "text": "handbook.dental_handbook.entry.toothbrush.page1"
+    },
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.toothbrush.page2"
+    },
+    {
+      "type": "crafting",
+      "recipe": "dental_handbook:wooden_toothbrush",
+      "text": "handbook.dental_handbook.entry.toothbrush.page3"
+    }
+  ]
+}

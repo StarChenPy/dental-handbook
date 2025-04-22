@@ -45,10 +45,7 @@ public class EntityEatListener {
     }
 
     private static void givePlayerEffect(Player player) {
-        MobEffectInstance effectToothDecay = player.getEffect(ModEffects.TOOTH_DECAY.get());
-        MobEffectInstance effectInjuryOral = player.getEffect(ModEffects.INJURY_ORAL.get());
         MobEffectInstance effectCleanOral = player.getEffect(ModEffects.CLEAN_ORAL.get());
-
         //如果有口腔洁净 buff 就不会蛀牙
         if (effectCleanOral != null) {
             return;
@@ -58,8 +55,9 @@ public class EntityEatListener {
             return;
         }
 
+        MobEffectInstance effectToothDecay = player.getEffect(ModEffects.TOOTH_DECAY.get());
         if (effectToothDecay == null) {
-            MobEffectInstance instance = new MobEffectInstance(ModEffects.TOOTH_DECAY.get(), -1);
+            MobEffectInstance instance = new MobEffectInstance(ModEffects.TOOTH_DECAY.get(), -1, 0, false, false, true);
             // 设定无法被牛奶移除
             instance.getCures().remove(EffectCures.MILK);
             player.addEffect(instance);
@@ -71,6 +69,8 @@ public class EntityEatListener {
             return;
         }
 
+        MobEffectInstance effectInjuryOral = player.getEffect(ModEffects.INJURY_ORAL.get());
+        // 如果蛀牙已经到达最大等级，就给予口腔损伤
         if (effectInjuryOral == null) {
             player.addEffect(new MobEffectInstance(ModEffects.INJURY_ORAL.get(), 2400));
             return;
