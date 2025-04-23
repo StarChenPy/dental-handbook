@@ -39,6 +39,9 @@ public abstract class AbstractToothpaste extends Item {
         }
     }
 
+    /**
+     * 用来获取粒子效果的颜色
+     */
     public int getColor() {
         return this.color;
     }

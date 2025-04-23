@@ -7,6 +7,7 @@ import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.client.event.RenderHandEvent;
 import org.joml.Matrix4f;
 import org.slf4j.Logger;
@@ -16,6 +17,7 @@ import xyz.starchenpy.dental_handbook.common.item.toothpaste.AbstractToothpaste;
 import xyz.starchenpy.dental_handbook.common.util.MathUtil;
 import xyz.starchenpy.dental_handbook.common.util.NbtUtil;
 
+@Mod.EventBusSubscriber
 public class ItemRenderListener {
     private static final Logger log = LoggerFactory.getLogger(ItemRenderListener.class);
     private static Matrix4f buffer;
