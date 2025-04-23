@@ -35,7 +35,7 @@ public abstract class AbstractToothpaste extends Item {
         // 除蛀
         int amplifier = effectToothDecay.getAmplifier();
         if (amplifier < this.maxLevel) {
-            EffectUtil.updateEffect(entity, effectToothDecay, amplifier - 1);
+            EffectUtil.updateEffect(entity, effectToothDecay, 0, amplifier - 1);
         }
     }
 
