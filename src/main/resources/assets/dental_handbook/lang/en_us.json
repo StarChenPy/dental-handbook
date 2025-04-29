@@ -12,6 +12,8 @@
   "item.dental_handbook.redstone_toothpaste": "Redstone Toothpaste",
   "item.dental_handbook.lapis_lazuli_toothpaste": "Lapis Lazuli Toothpaste",
   "item.dental_handbook.golden_apple_toothpaste": "Golden Apple Toothpaste",
+  "item.dental_handbook.ender_toothpaste": "Ender Toothpaste",
+  "item.dental_handbook.blaze_toothpaste": "Blaze Toothpaste",
 
   "item.dental_handbook.handbook": "Dental Handbook",
   "item.dental_handbook.bristle": "Bristle",
@@ -21,6 +23,7 @@
   "effect.dental_handbook.tooth_decay": "Tooth Decay",
   "effect.dental_handbook.injury_oral": "Injury Oral",
   "effect.dental_handbook.clean_oral": "Clean Oral",
+  "effect.dental_handbook.ender_affinity": "Ender Affinity",
 
   "death.attack.oral_bleeding": "%1$s punctured the oral artery while eating.",
 
@@ -106,6 +109,14 @@
   "handbook.dental_handbook.entry.redstone_toothpaste": "Redstone Toothpaste",
   "handbook.dental_handbook.entry.redstone_toothpaste.page0": "When used for $(thing)brushing$(), provides $(item)Clean Oral$() effect (up to level 3 $(item)Tooth Decay$()). $(p)No combo moves with Redstone-powered Toothbrush.",
   "handbook.dental_handbook.entry.redstone_toothpaste.page1": "Craft Redstone Toothpaste",
+
+  "handbook.dental_handbook.entry.blaze_toothpaste": "Blaze Toothpaste",
+  "handbook.dental_handbook.entry.blaze_toothpaste.page0": "    When used for $(thing)brushing$(), provides $(item)Clean Oral$() effect (removes up to level 4 $(item)Tooth Decay$()) and extra $(item)Strength$(). $(p)    Seriously though, putting blaze powder directly in your mouth probably isn't comfortable.",
+  "handbook.dental_handbook.entry.blaze_toothpaste.page1": "Craft Blaze Toothpaste",
+
+  "handbook.dental_handbook.entry.ender_toothpaste": "Ender Toothpaste",
+  "handbook.dental_handbook.entry.ender_toothpaste.page0": "    When used for $(thing)brushing$(), provides $(item)Clean Oral$() effect (removes up to level 3 $(item)Tooth Decay$()) and $(item)Ender Affinity$(). This lets you stare at Endermen without provoking them, and removes teleportation damage from Ender Pearls.",
+  "handbook.dental_handbook.entry.ender_toothpaste.page1": "Craft Ender Toothpaste",
 
   "handbook.dental_handbook.category.denture": "Dentures",
   "handbook.dental_handbook.category.denture.desc": "You are enhanced, go eat!",

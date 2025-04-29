@@ -12,6 +12,8 @@
   "item.dental_handbook.redstone_toothpaste": "紅石牙膏",
   "item.dental_handbook.lapis_lazuli_toothpaste": "青金石牙膏",
   "item.dental_handbook.golden_apple_toothpaste": "金蘋果牙膏",
+  "item.dental_handbook.ender_toothpaste": "終界牙膏",
+  "item.dental_handbook.blaze_toothpaste": "烈焰牙膏",
 
   "item.dental_handbook.handbook": "牙科手册",
   "item.dental_handbook.bristle": "豬鬃",
@@ -88,7 +90,7 @@
   "handbook.dental_handbook.entry.toothpaste.page1": "合成牙膏管",
   "handbook.dental_handbook.entry.toothpaste.page2": "    $(item)木炭牙膏$()是你前期最得力的助手之一，材料簡單，口感超絕，可能就是長得醜了點。$(p)    作為牙膏$(thing)刷牙$()後，提供$(item)潔淨口腔$()效果，最高可以祛除4級的$(item)蛀牙$()。$(p)    其實照理來說刷完要漱口，否則嘴會變黑。",
   "handbook.dental_handbook.entry.toothpaste.page3": "合成木炭牙膏，1攻1防，最簡單的牙膏",
-  "handbook.dental_handbook.entry.toothpaste.page4": "    如果你的$(item)蛀牙$()等級太高了怎麼辦，木炭恐怕已經無能為力，而加入其他材料你難以獲得的話，恐怕你不得不使用$(item)燧石牙膏$()。$(p)    作為牙膏$(thing)刷牙$()後，可以祛除1層$(item)蛀牙$()效果，最高可以祛除4級的$(item)蛀牙$()。$(p)    它粗糙的顆粒會磨損你的口腔，不過對於祛蛀這方面，它非常專業。",
+  "handbook.dental_handbook.entry.toothpaste.page4": "    如果你的$(item)蛀牙$()等級太高了怎麼辦，木炭恐怕已經無能為力，而假如其他材料你難以獲得的話，恐怕你不得不使用$(item)燧石牙膏$()。$(p)    作為牙膏$(thing)刷牙$()後，可以祛除1層$(item)蛀牙$()效果，最高可以祛除4級的$(item)蛀牙$()。$(p)    它粗糙的顆粒會磨損你的口腔，不過對於祛蛀這方面，它非常專業。",
   "handbook.dental_handbook.entry.toothpaste.page5": "合成燧石牙膏",
 
   "handbook.dental_handbook.entry.golden_apple_toothpaste": "金蘋果牙膏",
@@ -106,6 +108,14 @@
   "handbook.dental_handbook.entry.redstone_toothpaste": "紅石牙膏",
   "handbook.dental_handbook.entry.redstone_toothpaste.page0": "    作為牙膏$(thing)刷牙$()後，提供$(item)潔淨口腔$()效果，最高可以祛除3級的$(item)蛀牙$()。$(p)    與紅石動力牙刷並沒有組合技。",
   "handbook.dental_handbook.entry.redstone_toothpaste.page1": "合成紅石牙膏",
+
+  "handbook.dental_handbook.entry.blaze_toothpaste": "烈焰牙膏",
+  "handbook.dental_handbook.entry.blaze_toothpaste.page0": "    作為牙膏$(thing)刷牙$()後，提供$(item)潔淨口腔$()效果，最高可以祛除4級的$(item)蛀牙$()。$(p)    另外，會額外提供$(item)力量$()的效果。$(p)    不過說真的，把烈焰粉直接塞到嘴裡大概不會很舒服。",
+  "handbook.dental_handbook.entry.blaze_toothpaste.page1": "合成烈焰牙膏",
+
+  "handbook.dental_handbook.entry.ender_toothpaste": "終界牙膏",
+  "handbook.dental_handbook.entry.ender_toothpaste.page0": "    作為牙膏$(thing)刷牙$()後，提供$(item)潔淨口腔$()效果，最高可以祛除3級的$(item)蛀牙$()。$(p)    會額外提供$(item)終界親和$()效果，這讓你直視終界使者不會激怒牠了，其次，消除了終界珍珠傳送時的傷害。",
+  "handbook.dental_handbook.entry.ender_toothpaste.page1": "合成終界牙膏",
 
   "handbook.dental_handbook.category.denture": "假牙",
   "handbook.dental_handbook.category.denture.desc": "你被強化了，快吃！",

@@ -16,7 +16,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import xyz.starchenpy.dental_handbook.common.ModSounds;
-import xyz.starchenpy.dental_handbook.common.advancements.ModTriggers;
+import xyz.starchenpy.dental_handbook.common.advancement.ModTriggers;
 import xyz.starchenpy.dental_handbook.common.item.toothpaste.AbstractToothpaste;
 import xyz.starchenpy.dental_handbook.common.particle.ToothpasteParticleOption;
 import xyz.starchenpy.dental_handbook.common.util.MathUtil;

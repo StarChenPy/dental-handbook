@@ -14,6 +14,8 @@
   "item.dental_handbook.redstone_toothpaste": "红石牙膏",
   "item.dental_handbook.lapis_lazuli_toothpaste": "青金石牙膏",
   "item.dental_handbook.golden_apple_toothpaste": "金苹果牙膏",
+  "item.dental_handbook.ender_toothpaste": "末影牙膏",
+  "item.dental_handbook.blaze_toothpaste": "烈焰牙膏",
 
   "item.dental_handbook.handbook": "《牙科手册》",
   "item.dental_handbook.bristle": "猪鬃",
@@ -24,6 +26,7 @@
   "effect.dental_handbook.tooth_decay": "蛀牙",
   "effect.dental_handbook.injury_oral": "口腔受损",
   "effect.dental_handbook.clean_oral": "洁净口腔",
+  "effect.dental_handbook.ender_affinity": "末影亲和",
 
 
   "death.attack.oral_bleeding": "%1$s 在吃东西的时候被扎爆了动脉",
@@ -64,7 +67,7 @@
 
   "handbook.dental_handbook.entry.injury_oral": "口腔受损",
   "handbook.dental_handbook.entry.injury_oral.page0": "    这是长期不$(thing)刷牙$()的恶果。$(p)    在你的$(item)蛀牙$()严重到一定程度后，继续进食就有可能造成$(item)口腔损伤$()。$(p)    当你吃完东西以后，你的嘴会以一种明显的方式开始抗议，比如大出血，让吃饭变成一件令人受伤的事。$(p)    真是让人很不开心。",
-  "handbook.dental_handbook.entry.injury_oral.page1": "    $(thing)口腔出血$()造成的伤害取决于你的严重程度。毫无疑问，盔甲对于$(thing)口腔出血$()没啥卵用。$(p)    $(strike)不过如果你故意因此而死，会看到非常有趣的死亡提示。$()",
+  "handbook.dental_handbook.entry.injury_oral.page1": "    $(thing)口腔出血$()造成的伤害取决于你的严重程度。毫无疑问，盔甲对于$(thing)口腔出血$()完全无效。$(p)    $(strike)不过如果你故意因此而死，会看到非常有趣的死亡提示。$()",
 
   "handbook.dental_handbook.entry.clean_oral": "洁净口腔",
   "handbook.dental_handbook.entry.clean_oral.page0": "    这个buff是你保持健康的关键$(p)    使用某些牙膏完整$(thing)刷牙$()后，可以获得$(item)洁净口腔$()效果，在持续时间内，吃东西不会再获得$(item)蛀牙$()。",
@@ -95,7 +98,7 @@
   "handbook.dental_handbook.entry.toothpaste.page1": "合成牙膏皮",
   "handbook.dental_handbook.entry.toothpaste.page2": "    $(item)木炭牙膏$()是你前期最得力的干将之一，材料简单，嘴感超绝，可能就是长得丑了点。$(p)    作为牙膏$(thing)刷牙$()后，提供$(item)洁净口腔$()效果，最高可以祛除4级的$(item)蛀牙$()。$(p)    其实照理来说刷完要漱口，否则嘴会变黑。",
   "handbook.dental_handbook.entry.toothpaste.page3": "合成木炭牙膏，1攻1防，最简单的牙膏",
-  "handbook.dental_handbook.entry.toothpaste.page4": "    如果你的$(item)蛀牙$()等级太高了怎么办，木炭恐怕已经无能为力，而加入其它材料你难以获得的话，恐怕你不得不使用$(item)燧石牙膏$()。$(p)    作为牙膏$(thing)刷牙$()后，可以祛除1层$(item)蛀牙$()效果，最高可以祛除4级的$(item)蛀牙$()。$(p)    它粗糙的颗粒会磨损你的口腔，不过对于祛蛀这方面，它非常专业。",
+  "handbook.dental_handbook.entry.toothpaste.page4": "    如果你的$(item)蛀牙$()等级太高了怎么办，木炭恐怕已经无能为力，而假如其它材料你难以获得的话，恐怕你不得不使用$(item)燧石牙膏$()。$(p)    作为牙膏$(thing)刷牙$()后，可以祛除1层$(item)蛀牙$()效果，最高可以祛除4级的$(item)蛀牙$()。$(p)    它粗糙的颗粒会磨损你的口腔，不过对于祛蛀这方面，它非常专业。",
   "handbook.dental_handbook.entry.toothpaste.page5": "合成燧石牙膏",
 
   "handbook.dental_handbook.entry.golden_apple_toothpaste": "金苹果牙膏",
@@ -111,8 +114,16 @@
   "handbook.dental_handbook.entry.quartz_toothpaste.page1": "合成石英牙膏",
 
   "handbook.dental_handbook.entry.redstone_toothpaste": "红石牙膏",
-  "handbook.dental_handbook.entry.redstone_toothpaste.page0": "    作为牙膏$(thing)刷牙$()后，提供$(item)洁净口腔$()效果，最高可以祛除3级的$(item)蛀牙$()。$(p)    与红石动力牙刷并没有组合技。",
+  "handbook.dental_handbook.entry.redstone_toothpaste.page0": "    作为牙膏$(thing)刷牙$()后，提供$(item)洁净口腔$()效果，最高可以祛除3级的$(item)蛀牙$()。$(p)    另外，会额外提供$(item)急迫$()的效果。与红石动力牙刷并没有组合技。",
   "handbook.dental_handbook.entry.redstone_toothpaste.page1": "合成红石牙膏",
+
+  "handbook.dental_handbook.entry.blaze_toothpaste": "烈焰牙膏",
+  "handbook.dental_handbook.entry.blaze_toothpaste.page0": "    作为牙膏$(thing)刷牙$()后，提供$(item)洁净口腔$()效果，最高可以祛除4级的$(item)蛀牙$()。$(p)    另外，会额外提供$(item)力量$()的效果。$(p)    不过说真的，把烈焰粉直接塞到嘴里大概不会很舒服。",
+  "handbook.dental_handbook.entry.blaze_toothpaste.page1": "合成烈焰牙膏",
+
+  "handbook.dental_handbook.entry.ender_toothpaste": "末影牙膏",
+  "handbook.dental_handbook.entry.ender_toothpaste.page0": "    作为牙膏$(thing)刷牙$()后，提供$(item)洁净口腔$()效果，最高可以祛除3级的$(item)蛀牙$()。$(p)    会额外提供$(item)末影亲和$()效果，这让你直视末影人不会激怒它了，其次，消除了末影珍珠传送时的伤害。",
+  "handbook.dental_handbook.entry.ender_toothpaste.page1": "合成末影牙膏",
 
   "handbook.dental_handbook.category.denture": "假牙",
   "handbook.dental_handbook.category.denture.desc": "你被强化了，快吃！",

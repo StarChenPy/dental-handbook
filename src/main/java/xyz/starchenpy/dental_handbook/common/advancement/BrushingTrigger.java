@@ -1,4 +1,4 @@
-package xyz.starchenpy.dental_handbook.common.advancements;
+package xyz.starchenpy.dental_handbook.common.advancement;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;

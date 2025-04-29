@@ -12,6 +12,8 @@
   "item.dental_handbook.redstone_toothpaste": "レッドストーン歯磨き粉",
   "item.dental_handbook.lapis_lazuli_toothpaste": "ラピスラズリ歯磨き粉",
   "item.dental_handbook.golden_apple_toothpaste": "金のリンゴ歯磨き粉",
+  "item.dental_handbook.ender_toothpaste": "エンダー歯磨き粉",
+  "item.dental_handbook.blaze_toothpaste": "ブレイズ歯磨き粉",
 
   "item.dental_handbook.handbook": "歯科手帳",
   "item.dental_handbook.bristle": "猪のたてがみ",
@@ -106,6 +108,14 @@
   "handbook.dental_handbook.entry.redstone_toothpaste": "レッドストーン歯磨き粉",
   "handbook.dental_handbook.entry.redstone_toothpaste.page0": "    $(thing)歯磨き$()後、$(item)清潔な口腔$()効果（最大レベル3の$(item)虫歯$()除去）。$(p)    レッドストーン歯ブラシとのコンボ技はありません。",
   "handbook.dental_handbook.entry.redstone_toothpaste.page1": "レッドストーン歯磨き粉のクラフト",
+
+  "handbook.dental_handbook.entry.blaze_toothpaste": "ブレイズ歯磨き粉",
+  "handbook.dental_handbook.entry.blaze_toothpaste.page0": "    $(thing)歯磨き$()使用後、$(item)清潔な口腔$()効果（最大レベル4の$(item)虫歯$()除去）と追加で$(item)力$()を付与。$(p)    正直言って、ブレイズパウダーを直接口に入れるのは快適じゃないでしょう。",
+  "handbook.dental_handbook.entry.blaze_toothpaste.page1": "ブレイズ歯磨き粉のクラフト",
+
+  "handbook.dental_handbook.entry.ender_toothpaste": "エンダー歯磨き粉",
+  "handbook.dental_handbook.entry.ender_toothpaste.page0": "    $(thing)歯磨き$()使用後、$(item)清潔な口腔$()効果（最大レベル3の$(item)虫歯$()除去）と$(item)エンダーマン友好$()を付与。エンダーマンを凝視しても敵対化せず、エンダーパールのテレポートダメージを無効化します。",
+  "handbook.dental_handbook.entry.ender_toothpaste.page1": "エンダー歯磨き粉のクラフト",
 
   "handbook.dental_handbook.category.denture": "入れ歯",
   "handbook.dental_handbook.category.denture.desc": "強化完了、喰らえ！",

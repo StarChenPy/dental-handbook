@@ -1,4 +1,4 @@
-package xyz.starchenpy.dental_handbook.common.advancements;
+package xyz.starchenpy.dental_handbook.common.advancement;
 
 import net.minecraft.advancements.CriterionTrigger;
 import net.minecraft.core.registries.Registries;

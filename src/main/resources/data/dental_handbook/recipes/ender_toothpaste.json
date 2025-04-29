@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "dental_handbook:toothpaste_tube"
+    },
+    "E": {
+      "item": "minecraft:ender_pearl"
+    },
+    "F": {
+      "item": "minecraft:flint"
+    }
+  },
+  "pattern": [
+    " E ",
+    "FTF",
+    " E "
+  ],
+  "result": {
+    "item": "dental_handbook:ender_toothpaste"
+  }
+}
