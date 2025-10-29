@@ -9,7 +9,7 @@
     },
     {
       "type": "crafting",
-      "recipe": "dental_handbook:redstone_toothpaste",
+      "recipe": "dental_handbook:toothpaste/redstone_toothpaste",
       "text": "handbook.dental_handbook.entry.redstone_toothpaste.page1"
     }
   ]

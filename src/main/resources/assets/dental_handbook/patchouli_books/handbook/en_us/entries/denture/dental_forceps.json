@@ -1,7 +1,7 @@
 {
   "name": "handbook.dental_handbook.entry.dental_forceps",
   "category": "dental_handbook:denture",
-  "icon": "minecraft:stick",
+  "icon": "dental_handbook:dental_forceps",
   "priority": true,
   "pages": [
     {
@@ -10,7 +10,7 @@
     },
     {
       "type": "crafting",
-      "recipe": "dental_handbook:handbook",
+      "recipe": "dental_handbook:tool/dental_forceps",
       "text": "handbook.dental_handbook.entry.dental_forceps.page1"
     },
     {

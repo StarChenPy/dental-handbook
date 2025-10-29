@@ -9,7 +9,7 @@
     },
     {
       "type": "crafting",
-      "recipe": "dental_handbook:ender_toothpaste",
+      "recipe": "dental_handbook:toothpaste/ender_toothpaste",
       "text": "handbook.dental_handbook.entry.ender_toothpaste.page1"
     }
   ]

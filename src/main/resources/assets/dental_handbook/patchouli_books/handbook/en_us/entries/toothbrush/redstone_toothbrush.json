@@ -14,7 +14,7 @@
     },
     {
       "type": "crafting",
-      "recipe": "dental_handbook:redstone_toothbrush",
+      "recipe": "dental_handbook:toothbrush/redstone_toothbrush",
       "text": "handbook.dental_handbook.entry.redstone_toothbrush.page2"
     }
   ]

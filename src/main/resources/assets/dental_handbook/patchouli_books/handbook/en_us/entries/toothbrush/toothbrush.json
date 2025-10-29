@@ -20,7 +20,7 @@
     },
     {
       "type": "crafting",
-      "recipe": "dental_handbook:wooden_toothbrush",
+      "recipe": "dental_handbook:toothbrush/wooden_toothbrush",
       "text": "handbook.dental_handbook.entry.toothbrush.page3"
     }
   ]

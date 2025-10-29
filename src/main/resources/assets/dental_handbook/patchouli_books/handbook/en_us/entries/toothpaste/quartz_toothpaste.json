@@ -9,7 +9,7 @@
     },
     {
       "type": "crafting",
-      "recipe": "dental_handbook:quartz_toothpaste",
+      "recipe": "dental_handbook:toothpaste/quartz_toothpaste",
       "text": "handbook.dental_handbook.entry.quartz_toothpaste.page1"
     }
   ]

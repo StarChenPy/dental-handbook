@@ -9,7 +9,7 @@
     },
     {
       "type": "crafting",
-      "recipe": "dental_handbook:blaze_toothpaste",
+      "recipe": "dental_handbook:toothpaste/blaze_toothpaste",
       "text": "handbook.dental_handbook.entry.blaze_toothpaste.page1"
     }
   ]

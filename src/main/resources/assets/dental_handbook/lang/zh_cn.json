@@ -4,7 +4,6 @@
 
   "tooltip.dental_handbook.redstone_toothbrush": "§7这! 就! 是! 红石科技!",
 
-
   "item.dental_handbook.wooden_toothbrush": "木牙刷",
   "item.dental_handbook.redstone_toothbrush": "红石动力牙刷",
 
@@ -16,6 +15,8 @@
   "item.dental_handbook.golden_apple_toothpaste": "金苹果牙膏",
   "item.dental_handbook.ender_toothpaste": "末影牙膏",
   "item.dental_handbook.blaze_toothpaste": "烈焰牙膏",
+
+  "item.dental_handbook.dental_forceps": "拔牙钳",
 
   "item.dental_handbook.handbook": "《牙科手册》",
   "item.dental_handbook.bristle": "猪鬃",

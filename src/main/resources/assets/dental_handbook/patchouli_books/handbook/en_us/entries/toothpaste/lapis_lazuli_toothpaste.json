@@ -9,7 +9,7 @@
     },
     {
       "type": "crafting",
-      "recipe": "dental_handbook:lapis_lazuli_toothpaste",
+      "recipe": "dental_handbook:toothpaste/lapis_lazuli_toothpaste",
       "text": "handbook.dental_handbook.entry.lapis_lazuli_toothpaste.page1"
     }
   ]

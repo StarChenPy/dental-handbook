@@ -9,7 +9,7 @@
     },
     {
       "type": "crafting",
-      "recipe": "dental_handbook:golden_apple_toothpaste",
+      "recipe": "dental_handbook:toothpaste/golden_apple_toothpaste",
       "text": "handbook.dental_handbook.entry.golden_apple_toothpaste.page1"
     }
   ]

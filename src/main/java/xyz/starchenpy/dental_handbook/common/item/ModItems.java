@@ -5,8 +5,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import xyz.starchenpy.dental_handbook.common.item.toothbrush.RedstoneToothbrush;
-import xyz.starchenpy.dental_handbook.common.item.toothbrush.WoodenToothbrush;
+import xyz.starchenpy.dental_handbook.common.item.tool.*;
+import xyz.starchenpy.dental_handbook.common.item.toothbrush.*;
 import xyz.starchenpy.dental_handbook.common.item.toothpaste.*;
 
 import java.util.Collection;
@@ -29,6 +29,9 @@ public class ModItems {
     public static final DeferredItem<Item> GOLDEN_APPLE_TOOTHPASTE = ITEMS.registerItem("golden_apple_toothpaste", GoldenAppleToothpaste::new, new Item.Properties().durability(8));
     public static final DeferredItem<Item> ENDER_TOOTHPASTE = ITEMS.registerItem("ender_toothpaste", EnderToothpaste::new, new Item.Properties().durability(12));
     public static final DeferredItem<Item> BLAZE_TOOTHPASTE = ITEMS.registerItem("blaze_toothpaste", BlazeToothpaste::new, new Item.Properties().durability(10));
+
+    // 工具
+    public static final DeferredItem<Item> DENTAL_FORCEPS = ITEMS.registerItem("dental_forceps", DentalForceps::new, new Item.Properties().durability(8));
 
     // 材料
     public static final DeferredItem<Item> BRISTLE = ITEMS.registerSimpleItem("bristle");

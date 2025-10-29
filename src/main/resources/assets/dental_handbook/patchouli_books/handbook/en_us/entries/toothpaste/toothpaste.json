@@ -19,7 +19,7 @@
     },
     {
       "type": "crafting",
-      "recipe": "dental_handbook:charcoal_toothpaste",
+      "recipe": "dental_handbook:toothpaste/charcoal_toothpaste",
       "text": "handbook.dental_handbook.entry.toothpaste.page3"
     },
     {
@@ -28,7 +28,7 @@
     },
     {
       "type": "crafting",
-      "recipe": "dental_handbook:flint_toothpaste",
+      "recipe": "dental_handbook:toothpaste/flint_toothpaste",
       "text": "handbook.dental_handbook.entry.toothpaste.page5"
     }
   ]
