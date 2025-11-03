@@ -15,9 +15,7 @@
     "teeth_whitening": {
       "trigger": "dental_handbook:after_brushing_teeth",
       "conditions": {
-        "item": {
-          "items": ["dental_handbook:wooden_toothbrush"]
-        }
+        "item": {}
       }
     }
   }
