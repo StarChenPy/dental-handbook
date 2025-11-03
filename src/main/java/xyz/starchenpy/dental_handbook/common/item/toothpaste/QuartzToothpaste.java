@@ -6,12 +6,12 @@ import xyz.starchenpy.dental_handbook.common.effect.ModEffects;
 
 public class QuartzToothpaste extends AbstractToothpaste {
     public QuartzToothpaste(Properties item) {
-        super(item, 4, 0xE9E9E4);
+        super(item, 4, 0xFFE9E9E4);
     }
 
     @Override
     public void effect(LivingEntity entity) {
         cleanTooth(entity);
-        entity.addEffect(new MobEffectInstance(ModEffects.CLEAN_ORAL.get(), 9600));
+        entity.addEffect(new MobEffectInstance(ModEffects.CLEAN_ORAL, 9600));
     }
 }

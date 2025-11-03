@@ -7,7 +7,7 @@ import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.Mod;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RenderHandEvent;
 import org.joml.Matrix4f;
 import org.slf4j.Logger;
@@ -15,9 +15,9 @@ import org.slf4j.LoggerFactory;
 import xyz.starchenpy.dental_handbook.common.item.toothbrush.AbstractToothbrush;
 import xyz.starchenpy.dental_handbook.common.item.toothpaste.AbstractToothpaste;
 import xyz.starchenpy.dental_handbook.common.util.MathUtil;
-import xyz.starchenpy.dental_handbook.common.util.NbtUtil;
+import xyz.starchenpy.dental_handbook.common.util.DataComponentUtil;
 
-@Mod.EventBusSubscriber
+@EventBusSubscriber
 public class ItemRenderListener {
     private static final Logger log = LoggerFactory.getLogger(ItemRenderListener.class);
     private static Matrix4f buffer;
@@ -42,7 +42,7 @@ public class ItemRenderListener {
             return;
         }
         // 牙刷上有牙膏说明正在刷牙，直接返回
-        if (NbtUtil.getToothpaste(toothbrush) instanceof AbstractToothpaste) {
+        if (DataComponentUtil.getToothpaste(toothbrush) instanceof AbstractToothpaste) {
             return;
         }
 
@@ -57,7 +57,7 @@ public class ItemRenderListener {
 
         int remainingDuration = player.getUseItemRemainingTicks();
         if (remainingDuration > 0) {
-            applyToothpasteTransform(event.getPoseStack(), event.getHand(), remainingDuration, toothbrush.getUseDuration(), event.getPartialTick());
+            applyToothpasteTransform(event.getPoseStack(), event.getHand(), remainingDuration, toothbrush.getUseDuration(player), event.getPartialTick());
         }
     }
 

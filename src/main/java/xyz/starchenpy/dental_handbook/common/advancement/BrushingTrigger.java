@@ -24,14 +24,14 @@ public class BrushingTrigger extends SimpleCriterionTrigger<BrushingTrigger.Trig
         this.trigger(player, triggerInstance -> triggerInstance.matches(stack));
     }
 
-    public record TriggerInstance(Optional<ContextAwarePredicate> player, Optional<ItemPredicate> item) implements SimpleCriterionTrigger.SimpleInstance {
+    public record TriggerInstance(Optional<ContextAwarePredicate> player, ItemPredicate item) implements SimpleCriterionTrigger.SimpleInstance {
         public static final Codec<BrushingTrigger.TriggerInstance> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-                ExtraCodecs.strictOptionalField(EntityPredicate.ADVANCEMENT_CODEC, "player").forGetter(TriggerInstance::player),
-                ExtraCodecs.strictOptionalField(ItemPredicate.CODEC, "item").forGetter(TriggerInstance::item)
+                EntityPredicate.ADVANCEMENT_CODEC.optionalFieldOf("player").forGetter(TriggerInstance::player),
+                ItemPredicate.CODEC.fieldOf("item").forGetter(TriggerInstance::item)
         ).apply(instance, TriggerInstance::new));
 
         public boolean matches(ItemStack stack) {
-            return this.item.isEmpty() || this.item.get().matches(stack);
+            return this.item.test(stack);
         }
     }
 }

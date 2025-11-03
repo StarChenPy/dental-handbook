@@ -26,7 +26,7 @@ public abstract class AbstractToothpaste extends Item {
      * @param entity 玩家实体
      */
     protected void cleanTooth(LivingEntity entity) {
-        MobEffectInstance effectToothDecay = entity.getEffect(ModEffects.TOOTH_DECAY.get());
+        MobEffectInstance effectToothDecay = entity.getEffect(ModEffects.TOOTH_DECAY);
 
         if (effectToothDecay == null) {
             return;

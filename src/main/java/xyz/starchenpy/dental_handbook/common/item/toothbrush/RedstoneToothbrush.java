@@ -3,9 +3,7 @@ package xyz.starchenpy.dental_handbook.common.item.toothbrush;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
-import net.minecraft.world.level.Level;
 
-import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.List;
 
@@ -18,7 +16,7 @@ public class RedstoneToothbrush extends AbstractToothbrush {
 
     @Override
     @ParametersAreNonnullByDefault
-    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> tooltip, TooltipFlag flagIn) {
-        tooltip.add(Component.translatable("tooltip." + MOD_ID + ".redstone_toothbrush"));
+    public void appendHoverText(ItemStack stack, TooltipContext context, List<Component> tooltipComponents, TooltipFlag tooltipFlag) {
+        tooltipComponents.add(Component.translatable("tooltip." + MOD_ID + ".redstone_toothbrush"));
     }
 }

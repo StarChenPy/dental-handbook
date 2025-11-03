@@ -8,12 +8,17 @@
       "translate": "advancements.dental_handbook.teeth_whitening.desc"
     },
     "icon": {
-      "item": "dental_handbook:wooden_toothbrush"
+      "id": "dental_handbook:wooden_toothbrush"
     }
   },
   "criteria": {
     "teeth_whitening": {
-      "trigger": "dental_handbook:after_brushing_teeth"
+      "trigger": "dental_handbook:after_brushing_teeth",
+      "conditions": {
+        "item": {
+          "items": ["dental_handbook:wooden_toothbrush"]
+        }
+      }
     }
   }
 }

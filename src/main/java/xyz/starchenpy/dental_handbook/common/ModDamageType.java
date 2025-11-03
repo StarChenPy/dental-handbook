@@ -7,5 +7,5 @@ import net.minecraft.world.damagesource.DamageType;
 import xyz.starchenpy.dental_handbook.DentalHandbook;
 
 public class ModDamageType {
-    public static final ResourceKey<DamageType> ORAL_BLEEDING = ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation(DentalHandbook.MOD_ID, "oral_bleeding"));
+    public static final ResourceKey<DamageType> ORAL_BLEEDING = ResourceKey.create(Registries.DAMAGE_TYPE, ResourceLocation.fromNamespaceAndPath(DentalHandbook.MOD_ID, "oral_bleeding"));
 }

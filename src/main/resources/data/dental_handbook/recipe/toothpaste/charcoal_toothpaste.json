@@ -5,19 +5,17 @@
     "T": {
       "item": "dental_handbook:toothpaste_tube"
     },
-    "E": {
-      "item": "minecraft:ender_pearl"
-    },
-    "F": {
-      "item": "minecraft:flint"
+    "C": {
+      "item": "minecraft:charcoal"
     }
   },
   "pattern": [
-    " E ",
-    "FTF",
-    " E "
+    " C ",
+    "CTC",
+    " C "
   ],
   "result": {
-    "item": "dental_handbook:ender_toothpaste"
+    "count": 1,
+    "id": "dental_handbook:charcoal_toothpaste"
   }
 }

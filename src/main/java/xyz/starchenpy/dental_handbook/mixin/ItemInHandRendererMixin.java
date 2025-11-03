@@ -3,6 +3,7 @@ package xyz.starchenpy.dental_handbook.mixin;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.ItemInHandRenderer;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
@@ -18,17 +19,17 @@ public abstract class ItemInHandRendererMixin {
     @Shadow
     private Minecraft minecraft;
 
-    @Redirect(method = "applyEatTransform", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;getUseDuration()I"))
-    public int getUseDuration(ItemStack instance) {
-        int duration = instance.getUseDuration();
+    @Redirect(method = "applyEatTransform", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;getUseDuration(Lnet/minecraft/world/entity/LivingEntity;)I"))
+    public int getUseDuration(ItemStack instance, LivingEntity entity) {
+        int duration = instance.getUseDuration(entity);
 
         MobEffectInstance effect = null;
         if (this.minecraft.player != null) {
-            effect = this.minecraft.player.getEffect(ModEffects.TOOTH_DECAY.get());
+            effect = this.minecraft.player.getEffect(ModEffects.TOOTH_DECAY);
         }
 
         if (effect != null) {
-            int extraDuration = (effect.getAmplifier() + 1) * Config.extraEatTime;
+            int extraDuration = (effect.getAmplifier() + 1) * Config.EXTRA_EAT_TIME.get();
             return duration + extraDuration;
         }
 

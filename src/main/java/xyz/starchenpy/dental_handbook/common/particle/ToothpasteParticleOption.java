@@ -1,59 +1,28 @@
 package xyz.starchenpy.dental_handbook.common.particle;
 
-import com.mojang.brigadier.StringReader;
-import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import com.mojang.serialization.Codec;
-import net.minecraft.commands.arguments.item.ItemInput;
-import net.minecraft.commands.arguments.item.ItemParser;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.particles.ParticleOptions;
 import net.minecraft.core.particles.ParticleType;
-import net.minecraft.core.registries.BuiltInRegistries;
-import net.minecraft.network.FriendlyByteBuf;
+import net.minecraft.network.RegistryFriendlyByteBuf;
+import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.world.item.ItemStack;
 
 import javax.annotation.Nonnull;
-import javax.annotation.ParametersAreNonnullByDefault;
 
-public class ToothpasteParticleOption implements ParticleOptions {
-    public static final ParticleOptions.Deserializer<ToothpasteParticleOption> DESERIALIZER = new ParticleOptions.Deserializer<>() {
-        @Nonnull
-        @Override
-        @ParametersAreNonnullByDefault
-        public ToothpasteParticleOption fromCommand(ParticleType<ToothpasteParticleOption> type, StringReader p_123722_) throws CommandSyntaxException {
-            p_123722_.expect(' ');
-            ItemParser.ItemResult itemparser$itemresult = ItemParser.parseForItem(BuiltInRegistries.ITEM.asLookup(), p_123722_);
-            ItemStack itemstack = new ItemInput(itemparser$itemresult.item(), itemparser$itemresult.nbt()).createItemStack(1, false);
-            return new ToothpasteParticleOption(itemstack);
-        }
+public record ToothpasteParticleOption(ItemStack itemStack) implements ParticleOptions {
+    private static final Codec<ItemStack> ITEM_CODEC = Codec.withAlternative(ItemStack.SINGLE_ITEM_CODEC, ItemStack.ITEM_NON_AIR_CODEC, ItemStack::new);
 
-        @Nonnull
-        @Override
-        @ParametersAreNonnullByDefault
-        public ToothpasteParticleOption fromNetwork(ParticleType<ToothpasteParticleOption> type, FriendlyByteBuf p_123725_) {
-            return new ToothpasteParticleOption(p_123725_.readItem());
-        }
-    };
-    private final ItemStack itemStack;
-
-    public static Codec<ToothpasteParticleOption> codec() {
-        return ItemStack.CODEC.xmap(ToothpasteParticleOption::new, from -> from.itemStack);
+    public static MapCodec<ToothpasteParticleOption> codec() {
+        return ITEM_CODEC.xmap(ToothpasteParticleOption::new, ToothpasteParticleOption::getItem).fieldOf("item");
     }
 
-    public ToothpasteParticleOption(ItemStack pItemStack) {
-        this.itemStack = pItemStack.copy();
+    public static StreamCodec<? super RegistryFriendlyByteBuf, ToothpasteParticleOption> streamCodec() {
+        return ItemStack.STREAM_CODEC.map(ToothpasteParticleOption::new, ToothpasteParticleOption::getItem);
     }
 
-    @Override
-    public void writeToNetwork(FriendlyByteBuf pBuffer) {
-        pBuffer.writeItem(this.itemStack);
-    }
-
-    @Nonnull
-    @Override
-    public String writeToString() {
-        return BuiltInRegistries.PARTICLE_TYPE.getKey(this.getType())
-                + " "
-                + new ItemInput(this.itemStack.getItemHolder(), this.itemStack.getTag()).serialize();
+    public ToothpasteParticleOption(ItemStack itemStack) {
+        this.itemStack = itemStack.copy();
     }
 
     @Nonnull

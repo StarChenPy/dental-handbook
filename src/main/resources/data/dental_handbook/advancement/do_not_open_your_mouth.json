@@ -8,7 +8,7 @@
       "translate": "advancements.dental_handbook.do_not_open_your_mouth.desc"
     },
     "icon": {
-      "item": "minecraft:wither_rose"
+      "id": "minecraft:wither_rose"
     }
   },
   "criteria": {

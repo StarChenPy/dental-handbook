@@ -5,16 +5,17 @@
     "T": {
       "item": "dental_handbook:toothpaste_tube"
     },
-    "B": {
-      "item": "minecraft:blaze_powder"
+    "R": {
+      "item": "minecraft:redstone"
     }
   },
   "pattern": [
-    " B ",
-    "BTB",
-    " B "
+    " R ",
+    "RTR",
+    " R "
   ],
   "result": {
-    "item": "dental_handbook:blaze_toothpaste"
+    "count": 1,
+    "id": "dental_handbook:redstone_toothpaste"
   }
 }

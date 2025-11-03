@@ -8,7 +8,7 @@
       "translate": "advancements.dental_handbook.root.desc"
     },
     "icon": {
-      "item": "minecraft:sugar"
+      "id": "minecraft:sugar"
     }
   },
   "criteria": {

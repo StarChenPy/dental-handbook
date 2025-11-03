@@ -8,7 +8,7 @@
       "translate": "advancements.dental_handbook.redstone_oscillation.desc"
     },
     "icon": {
-      "item": "dental_handbook:redstone_toothbrush"
+      "id": "dental_handbook:redstone_toothbrush"
     }
   },
   "criteria": {

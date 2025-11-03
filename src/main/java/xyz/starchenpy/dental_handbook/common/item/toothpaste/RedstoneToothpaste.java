@@ -7,13 +7,13 @@ import xyz.starchenpy.dental_handbook.common.effect.ModEffects;
 
 public class RedstoneToothpaste extends AbstractToothpaste {
     public RedstoneToothpaste(Properties item) {
-        super(item, 3, 0xFF0000);
+        super(item, 3, 0xFFFF0000);
     }
 
     @Override
     public void effect(LivingEntity entity) {
         cleanTooth(entity);
         entity.addEffect(new MobEffectInstance(MobEffects.DIG_SPEED, 6000, 0));
-        entity.addEffect(new MobEffectInstance(ModEffects.CLEAN_ORAL.get(), 9600));
+        entity.addEffect(new MobEffectInstance(ModEffects.CLEAN_ORAL, 9600));
     }
 }

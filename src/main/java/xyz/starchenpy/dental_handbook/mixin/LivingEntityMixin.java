@@ -1,5 +1,6 @@
 package xyz.starchenpy.dental_handbook.mixin;
 
+import net.minecraft.core.Holder;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
@@ -14,16 +15,16 @@ import xyz.starchenpy.dental_handbook.common.effect.ModEffects;
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin {
     @Shadow
-    public abstract MobEffectInstance getEffect(MobEffect pEffect);
+    public abstract MobEffectInstance getEffect(Holder<MobEffect> effect);
 
-    @Redirect(method = "shouldTriggerItemUseEffects", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;getUseDuration()I"))
-    public int getUseDuration(ItemStack instance) {
-        int duration = instance.getUseDuration();
+    @Redirect(method = "shouldTriggerItemUseEffects", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/item/ItemStack;getUseDuration(Lnet/minecraft/world/entity/LivingEntity;)I"))
+    public int getUseDuration(ItemStack instance, LivingEntity entity) {
+        int duration = instance.getUseDuration(entity);
 
-        MobEffectInstance effect = getEffect(ModEffects.TOOTH_DECAY.get());
+        MobEffectInstance effect = getEffect(ModEffects.TOOTH_DECAY);
 
         if (effect != null) {
-            int extraDuration = (int) ((effect.getAmplifier() + 1) * Config.extraEatTime * 0.85);
+            int extraDuration = (int) ((effect.getAmplifier() + 1) * Config.EXTRA_EAT_TIME.get() * 0.85);
             return duration + extraDuration;
         }
 

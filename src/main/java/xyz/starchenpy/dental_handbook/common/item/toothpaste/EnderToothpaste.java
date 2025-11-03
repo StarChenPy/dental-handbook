@@ -6,14 +6,14 @@ import xyz.starchenpy.dental_handbook.common.effect.ModEffects;
 
 public class EnderToothpaste extends AbstractToothpaste {
     public EnderToothpaste(Properties item) {
-        super(item, 3, 0x258474);
+        super(item, 3, 0xFF258474);
     }
 
     @Override
     public void effect(LivingEntity entity) {
         cleanTooth(entity);
-        entity.removeEffect(ModEffects.INJURY_ORAL.get());
-        entity.addEffect(new MobEffectInstance(ModEffects.ENDER_AFFINITY.get(), 3600, 0));
-        entity.addEffect(new MobEffectInstance(ModEffects.CLEAN_ORAL.get(), 9600));
+        entity.removeEffect(ModEffects.INJURY_ORAL);
+        entity.addEffect(new MobEffectInstance(ModEffects.ENDER_AFFINITY, 3600, 0));
+        entity.addEffect(new MobEffectInstance(ModEffects.CLEAN_ORAL, 9600));
     }
 }

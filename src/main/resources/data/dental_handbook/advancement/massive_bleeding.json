@@ -8,7 +8,7 @@
       "translate": "advancements.dental_handbook.massive_bleeding.desc"
     },
     "icon": {
-      "item": "minecraft:red_wool"
+      "id": "minecraft:red_wool"
     }
   },
   "criteria": {

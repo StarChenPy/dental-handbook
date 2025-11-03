@@ -1,13 +1,14 @@
 package xyz.starchenpy.dental_handbook.common.util;
 
 import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.core.Holder;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 
 public class EffectUtil {
-    public static void getOrUpdateEffect(LivingEntity entity, MobEffect effect, int duration, int maxLevel, boolean canCure, boolean haveParticle) {
+    public static void getOrUpdateEffect(LivingEntity entity, Holder<MobEffect> effect, int duration, int maxLevel, boolean canCure, boolean haveParticle) {
         MobEffectInstance effectInstance = entity.getEffect(effect);
         if (effectInstance == null) {
             MobEffectInstance instance = new MobEffectInstance(effect, duration, 0, false, haveParticle, true);
