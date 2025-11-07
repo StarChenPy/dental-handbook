@@ -5,9 +5,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
-import xyz.starchenpy.dental_handbook.common.item.tool.DentalForceps;
-import xyz.starchenpy.dental_handbook.common.item.toothbrush.RedstoneToothbrush;
-import xyz.starchenpy.dental_handbook.common.item.toothbrush.WoodenToothbrush;
+import xyz.starchenpy.dental_handbook.common.item.tool.*;
+import xyz.starchenpy.dental_handbook.common.item.toothbrush.*;
 import xyz.starchenpy.dental_handbook.common.item.toothpaste.*;
 
 import java.util.ArrayList;
@@ -22,7 +21,7 @@ public class ModItems {
     private static final ArrayList<DeferredItem<Item>> TOOTHPASTES = new ArrayList<>();
 
     // 牙刷
-    public static final DeferredItem<Item> WOODEN_TOOTHBRUSH = registerToothbrush("wooden_toothbrush", WoodenToothbrush::new, 160);
+    public static final DeferredItem<Item> WOODEN_TOOTHBRUSH = registerToothbrush("wooden_toothbrush", WoodenToothbrush::new, 80);
     public static final DeferredItem<Item> REDSTONE_TOOTHBRUSH = registerToothbrush("redstone_toothbrush", RedstoneToothbrush::new, 200);
 
     // 牙膏
@@ -36,12 +35,19 @@ public class ModItems {
     public static final DeferredItem<Item> BLAZE_TOOTHPASTE = registerToothpaste("blaze_toothpaste", BlazeToothpaste::new, 10);
 
     // 工具
-    public static final DeferredItem<Item> DENTAL_FORCEPS = ITEMS.registerItem("dental_forceps", DentalForceps::new, new Item.Properties().durability(8));
+    public static final DeferredItem<Item> DENTAL_FORCEPS = ITEMS.registerItem("dental_forceps", DentalForceps::new, new Item.Properties().durability(40));
+    public static final DeferredItem<Item> DENTAL_HAMMER = ITEMS.registerItem("dental_hammer", DentalHammer::new, new Item.Properties().durability(40));
 
     // 材料
     public static final DeferredItem<Item> BRISTLE = ITEMS.registerSimpleItem("bristle");
     public static final DeferredItem<Item> TOOTHBRUSH_HEAD = ITEMS.registerSimpleItem("toothbrush_head");
     public static final DeferredItem<Item> TOOTHPASTE_TUBE = ITEMS.registerSimpleItem("toothpaste_tube");
+    // 牙
+    public static final DeferredItem<Item> INCISOR = ITEMS.registerSimpleItem("incisor");
+    public static final DeferredItem<Item> CANINE = ITEMS.registerSimpleItem("canine");
+    public static final DeferredItem<Item> MOLAR = ITEMS.registerSimpleItem("molar");
+    public static final DeferredItem<Item> WISDOM = ITEMS.registerSimpleItem("wisdom");
+
 
     /**
      * 用于注册牙刷

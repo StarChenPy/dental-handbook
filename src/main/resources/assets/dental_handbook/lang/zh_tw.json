@@ -16,15 +16,21 @@
   "item.dental_handbook.blaze_toothpaste": "烈焰牙膏",
 
   "item.dental_handbook.dental_forceps": "拔牙鉗",
+  "item.dental_handbook.dental_hammer": "鑲牙錘",
 
   "item.dental_handbook.handbook": "牙科手册",
   "item.dental_handbook.bristle": "豬鬃",
   "item.dental_handbook.toothbrush_head": "牙刷頭",
   "item.dental_handbook.toothpaste_tube": "牙膏皮",
+  "item.dental_handbook.incisor": "門齒",
+  "item.dental_handbook.canine": "犬齒",
+  "item.dental_handbook.molar": "臼齒",
+  "item.dental_handbook.wisdom": "智齒",
 
   "effect.dental_handbook.tooth_decay": "蛀牙",
   "effect.dental_handbook.injury_oral": "口腔受損",
   "effect.dental_handbook.clean_oral": "潔淨口腔",
+  "effect.dental_handbook.ender_affinity": "終界亲和",
 
   "death.attack.oral_bleeding": "%1$s 在吃東西的時候被紮爆了動脈",
 
@@ -44,6 +50,8 @@
   "advancements.dental_handbook.redstone_oscillation.desc": "它怎麼震起來的?!",
 
   "sounds.dental_handbook.brushing_teeth_sound": "刷牙",
+
+  "menu.title.dental_handbook.select_tooth": "选择牙齒",
 
   "handbook.dental_handbook.landing_text": "你的牙開始痛了嗎？$(p)別擔心，《牙科手冊》會教你處理蛀牙，重拾無痛美食！",
 

@@ -1,4 +1,4 @@
-package xyz.starchenpy.dental_handbook.client;
+package xyz.starchenpy.dental_handbook.client.registry;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;

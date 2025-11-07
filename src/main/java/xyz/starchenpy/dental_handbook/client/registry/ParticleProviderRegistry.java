@@ -1,4 +1,4 @@
-package xyz.starchenpy.dental_handbook.client;
+package xyz.starchenpy.dental_handbook.client.registry;
 
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;

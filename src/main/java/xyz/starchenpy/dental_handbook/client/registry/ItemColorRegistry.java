@@ -1,14 +1,11 @@
-package xyz.starchenpy.dental_handbook.client;
+package xyz.starchenpy.dental_handbook.client.registry;
 
 import net.minecraft.client.color.item.ItemColor;
-import net.minecraft.world.item.Item;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
-import net.neoforged.neoforge.registries.DeferredHolder;
 import xyz.starchenpy.dental_handbook.common.item.ModItems;
-import xyz.starchenpy.dental_handbook.common.item.toothbrush.AbstractToothbrush;
 import xyz.starchenpy.dental_handbook.common.item.toothpaste.AbstractToothpaste;
 import xyz.starchenpy.dental_handbook.common.util.DataComponentUtil;
 

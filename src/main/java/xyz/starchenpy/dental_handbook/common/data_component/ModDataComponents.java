@@ -11,8 +11,8 @@ import static xyz.starchenpy.dental_handbook.DentalHandbook.MOD_ID;
 public class ModDataComponents {
     private static final DeferredRegister.DataComponents DATA_COMPONENTS = DeferredRegister.createDataComponents(Registries.DATA_COMPONENT_TYPE, MOD_ID);
 
-    public static final DeferredHolder<DataComponentType<?>, DataComponentType<ToothpasteRecord>> BASIC_EXAMPLE = DATA_COMPONENTS.registerComponentType(
-            "basic",
+    public static final DeferredHolder<DataComponentType<?>, DataComponentType<ToothpasteRecord>> TOOTHPASTE = DATA_COMPONENTS.registerComponentType(
+            "toothpaste",
             builder -> builder
                     .persistent(ToothpasteRecord.BASIC_CODEC)
                     .networkSynchronized(ToothpasteRecord.BASIC_STREAM_CODEC)

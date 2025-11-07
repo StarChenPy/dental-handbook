@@ -17,11 +17,16 @@
   "item.dental_handbook.blaze_toothpaste": "烈焰牙膏",
 
   "item.dental_handbook.dental_forceps": "拔牙钳",
+  "item.dental_handbook.dental_hammer": "镶牙锤",
 
   "item.dental_handbook.handbook": "《牙科手册》",
   "item.dental_handbook.bristle": "猪鬃",
   "item.dental_handbook.toothbrush_head": "牙刷头",
   "item.dental_handbook.toothpaste_tube": "牙膏皮",
+  "item.dental_handbook.incisor": "门齿",
+  "item.dental_handbook.canine": "犬齿",
+  "item.dental_handbook.molar": "臼齿",
+  "item.dental_handbook.wisdom": "智齿",
 
 
   "effect.dental_handbook.tooth_decay": "蛀牙",
@@ -51,6 +56,7 @@
 
   "sounds.dental_handbook.brushing_teeth_sound": "刷牙",
 
+  "menu.title.dental_handbook.select_tooth": "选择牙齿",
 
   "handbook.dental_handbook.landing_text": "你的牙开始疼了吗？$(p)别担心，《牙科手册》会教你如何处理蛀牙，重拾无痛美食！",
 

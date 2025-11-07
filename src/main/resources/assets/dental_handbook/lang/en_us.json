@@ -16,11 +16,16 @@
   "item.dental_handbook.blaze_toothpaste": "Blaze Toothpaste",
 
   "item.dental_handbook.dental_forceps": "Dental Forceps",
+  "item.dental_handbook.dental_hammer": "Dental Hammer",
 
   "item.dental_handbook.handbook": "Dental Handbook",
   "item.dental_handbook.bristle": "Bristle",
   "item.dental_handbook.toothbrush_head": "Toothbrush Head",
   "item.dental_handbook.toothpaste_tube": "Toothbrush Tube",
+  "item.dental_handbook.incisor": "Incisor",
+  "item.dental_handbook.canine": "Canine Tooth",
+  "item.dental_handbook.molar": "Molar",
+  "item.dental_handbook.wisdom": "Wisdom Tooth",
 
   "effect.dental_handbook.tooth_decay": "Tooth Decay",
   "effect.dental_handbook.injury_oral": "Injury Oral",
@@ -45,6 +50,8 @@
   "advancements.dental_handbook.redstone_oscillation.desc": "How did it vibrate?!",
 
   "sounds.dental_handbook.brushing_teeth_sound": "Brushing Teeth",
+
+  "menu.title.dental_handbook.select_tooth": "Select Tooth",
 
   "handbook.dental_handbook.landing_text": "Is your tooth starting to ache? $(p)Don't worry, the $(item)Dental Handbook$() will teach you how to deal with cavities and reclaim pain-free feasting!",
 

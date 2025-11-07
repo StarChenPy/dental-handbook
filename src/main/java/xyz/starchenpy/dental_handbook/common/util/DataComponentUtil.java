@@ -14,7 +14,7 @@ public class DataComponentUtil {
      * @return 牙膏
      */
     public static Item getToothpaste(ItemStack itemStack) {
-        ToothpasteRecord toothpaste = itemStack.get(ModDataComponents.BASIC_EXAMPLE);
+        ToothpasteRecord toothpaste = itemStack.get(ModDataComponents.TOOTHPASTE);
         if (toothpaste == null) {
             return null;
         }
@@ -29,7 +29,7 @@ public class DataComponentUtil {
      */
     public static void setToothpaste(ItemStack itemStack, Item toothpaste) {
         String toothpasteNamespace = BuiltInRegistries.ITEM.getKey(toothpaste).toString();
-        itemStack.set(ModDataComponents.BASIC_EXAMPLE, new ToothpasteRecord(toothpasteNamespace));
+        itemStack.set(ModDataComponents.TOOTHPASTE, new ToothpasteRecord(toothpasteNamespace));
     }
 
     /**
@@ -37,6 +37,6 @@ public class DataComponentUtil {
      * @param itemStack 要移除牙膏的物品
      */
     public static void removeToothpaste(ItemStack itemStack) {
-        itemStack.remove(ModDataComponents.BASIC_EXAMPLE);
+        itemStack.remove(ModDataComponents.TOOTHPASTE);
     }
 }
