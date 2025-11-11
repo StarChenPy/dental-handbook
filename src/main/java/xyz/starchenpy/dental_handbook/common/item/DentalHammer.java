@@ -1,4 +1,4 @@
-package xyz.starchenpy.dental_handbook.common.item.tool;
+package xyz.starchenpy.dental_handbook.common.item;
 
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
@@ -14,10 +14,12 @@ import xyz.starchenpy.dental_handbook.common.gui.DentureMenu;
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-public class DentalForceps extends Item {
-    public DentalForceps(Properties properties) {
+public class DentalHammer extends Item {
+
+    public DentalHammer(Properties properties) {
         super(properties);
     }
+
 
     @Nonnull
     @Override
