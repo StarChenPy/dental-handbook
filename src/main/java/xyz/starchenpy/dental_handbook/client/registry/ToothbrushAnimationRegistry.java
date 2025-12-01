@@ -12,8 +12,8 @@ import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.neoforge.client.extensions.common.RegisterClientExtensionsEvent;
 import xyz.starchenpy.dental_handbook.common.item.ModItems;
 import xyz.starchenpy.dental_handbook.common.item.toothpaste.AbstractToothpaste;
-import xyz.starchenpy.dental_handbook.common.util.MathUtil;
 import xyz.starchenpy.dental_handbook.common.util.DataComponentUtil;
+import xyz.starchenpy.dental_handbook.common.util.MathUtil;
 
 import javax.annotation.ParametersAreNonnullByDefault;
 

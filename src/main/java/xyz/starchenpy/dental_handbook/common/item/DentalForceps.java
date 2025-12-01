@@ -62,7 +62,7 @@ public class DentalForceps extends Item {
         if (data.getStackInSlot(slot).isEmpty()) {
             player.displayClientMessage(Component.literal(" 选定的位置没有牙！"), true);
             return false;
-        };
+        }
 
         // 拔牙并放入玩家物品栏
         ItemStack itemStack = data.extractItem(slot, 1, false);

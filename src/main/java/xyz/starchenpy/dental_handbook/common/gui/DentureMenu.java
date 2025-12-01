@@ -6,7 +6,6 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ClickType;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.neoforge.items.ItemStackHandler;
-import net.neoforged.neoforge.items.SlotItemHandler;
 import xyz.starchenpy.dental_handbook.common.ModAttachmentTypes;
 import xyz.starchenpy.dental_handbook.common.item.denture.DentureType;
 import xyz.starchenpy.dental_handbook.common.util.DataComponentUtil;
@@ -28,7 +27,7 @@ public class DentureMenu extends AbstractContainerMenu {
 
         if (player != null) {
             ItemStackHandler data = player.getData(ModAttachmentTypes.DENTURE);
-            
+
             // 门齿
             this.addSlot(new DentureSlot(data, DentureType.INCISOR, 0, 110, 35));
             this.addSlot(new DentureSlot(data, DentureType.INCISOR, 1, 135, 35));

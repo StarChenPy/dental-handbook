@@ -5,14 +5,7 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
-import net.minecraft.world.inventory.Slot;
-import net.minecraft.world.item.ItemStack;
-import org.jetbrains.annotations.Nullable;
 import xyz.starchenpy.dental_handbook.common.gui.DentureMenu;
-import xyz.starchenpy.dental_handbook.common.gui.DentureSlot;
-import xyz.starchenpy.dental_handbook.common.item.denture.DentureType;
-
-import javax.annotation.ParametersAreNonnullByDefault;
 
 import static xyz.starchenpy.dental_handbook.DentalHandbook.MOD_ID;
 

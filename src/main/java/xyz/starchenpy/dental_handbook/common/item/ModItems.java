@@ -9,7 +9,8 @@ import xyz.starchenpy.dental_handbook.common.item.denture.Denture;
 import xyz.starchenpy.dental_handbook.common.item.denture.DentureType;
 import xyz.starchenpy.dental_handbook.common.item.denture.material.AbstractMaterial;
 import xyz.starchenpy.dental_handbook.common.item.denture.material.Materials;
-import xyz.starchenpy.dental_handbook.common.item.toothbrush.*;
+import xyz.starchenpy.dental_handbook.common.item.toothbrush.RedstoneToothbrush;
+import xyz.starchenpy.dental_handbook.common.item.toothbrush.WoodenToothbrush;
 import xyz.starchenpy.dental_handbook.common.item.toothpaste.*;
 
 import java.util.ArrayList;

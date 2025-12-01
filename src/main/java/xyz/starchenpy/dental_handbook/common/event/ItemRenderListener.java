@@ -15,8 +15,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import xyz.starchenpy.dental_handbook.common.item.toothbrush.AbstractToothbrush;
 import xyz.starchenpy.dental_handbook.common.item.toothpaste.AbstractToothpaste;
-import xyz.starchenpy.dental_handbook.common.util.MathUtil;
 import xyz.starchenpy.dental_handbook.common.util.DataComponentUtil;
+import xyz.starchenpy.dental_handbook.common.util.MathUtil;
 
 @EventBusSubscriber(Dist.CLIENT)
 public class ItemRenderListener {

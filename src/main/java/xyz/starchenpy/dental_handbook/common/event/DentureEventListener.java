@@ -12,7 +12,6 @@ import net.neoforged.neoforge.items.ItemStackHandler;
 import xyz.starchenpy.dental_handbook.common.ModAttachmentTypes;
 import xyz.starchenpy.dental_handbook.common.item.denture.Denture;
 import xyz.starchenpy.dental_handbook.common.item.denture.DentureType;
-import xyz.starchenpy.dental_handbook.common.item.denture.material.AbstractMaterial;
 import xyz.starchenpy.dental_handbook.common.item.denture.material.IMaterialEventHandler;
 
 @EventBusSubscriber
