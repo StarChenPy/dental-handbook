@@ -7,7 +7,8 @@ public class Materials {
     private static final ArrayList<AbstractMaterial> MATERIALS = new ArrayList<>();
 
     static {
-        MATERIALS.add(new IronDenture());
+        MATERIALS.add(new BoneDenture());
+        MATERIALS.add(new GoldDenture());
     }
 
     public static List<AbstractMaterial> getMaterials() {

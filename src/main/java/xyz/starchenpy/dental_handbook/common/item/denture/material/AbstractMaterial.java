@@ -1,9 +1,8 @@
 package xyz.starchenpy.dental_handbook.common.item.denture.material;
 
-import net.minecraft.world.entity.player.Player;
 import xyz.starchenpy.dental_handbook.common.item.denture.DentureType;
 
-public abstract class AbstractMaterial {
+public abstract class AbstractMaterial implements IMaterialEventHandler {
     private final DentureType[] supportedTypes;
     private final int base_durability;
     private final String name;
@@ -13,26 +12,6 @@ public abstract class AbstractMaterial {
         this.base_durability = base_durability;
         this.supportedTypes = supportedTypes;
     }
-
-    /**
-     * 该材料作为门齿的时候，产生的效果
-     */
-    protected void incisor(Player player) {}
-
-    /**
-     * 该材料作为犬齿的时候，产生的效果
-     */
-    protected void canine(Player player) {}
-
-    /**
-     * 该材料作为臼齿的时候，产生的效果
-     */
-    protected void molar(Player player) {}
-
-    /**
-     * 该材料作为智齿的时候，产生的效果
-     */
-    protected void wisdom(Player player) {}
 
     public int getDurability(DentureType type) {
         if (type == DentureType.INCISOR) {
@@ -46,18 +25,6 @@ public abstract class AbstractMaterial {
         }
 
         return this.base_durability;
-    }
-
-    public void tick(DentureType type, Player player) {
-        if (type == DentureType.INCISOR) {
-            this.incisor(player);
-        } else if (type == DentureType.CANINE) {
-            this.canine(player);
-        } else if (type == DentureType.MOLAR) {
-            this.molar(player);
-        } else if (type == DentureType.WISDOM) {
-            this.wisdom(player);
-        }
     }
 
     /**

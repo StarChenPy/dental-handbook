@@ -22,7 +22,7 @@
   "item.dental_handbook.bristle": "猪のたてがみ",
   "item.dental_handbook.toothbrush_head": "歯ブラシのヘッド",
   "item.dental_handbook.toothpaste_tube": "歯磨き粉の皮",
-  "item.dental_handbook.incisor": "門歯",
+  "item.dental_handbook.incisor": "切歯",
   "item.dental_handbook.canine": "犬歯",
   "item.dental_handbook.molar": "臼歯",
   "item.dental_handbook.wisdom": "親知らず",
@@ -31,6 +31,15 @@
   "effect.dental_handbook.injury_oral": "口腔内の損傷",
   "effect.dental_handbook.clean_oral": "クリーンマウス",
   "effect.dental_handbook.ender_affinity": "エンドランの親和",
+
+
+  "item.dental_handbook.bone_denture_incisor": "骨の切歯",
+  "item.dental_handbook.bone_denture_canine": "骨の犬歯",
+  "item.dental_handbook.bone_denture_molar": "骨の臼歯",
+  "item.dental_handbook.gold_denture_incisor": "金色の切歯",
+  "item.dental_handbook.gold_denture_canine": "金色の犬歯",
+  "item.dental_handbook.gold_denture_molar": "金色の臼歯",
+
 
   "death.attack.oral_bleeding": "%1$s は食事中に動脈をやられた",
 

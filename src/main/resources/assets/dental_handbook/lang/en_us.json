@@ -32,7 +32,17 @@
   "effect.dental_handbook.clean_oral": "Clean Oral",
   "effect.dental_handbook.ender_affinity": "Ender Affinity",
 
+
+  "item.dental_handbook.bone_denture_incisor": "Bone Incisor",
+  "item.dental_handbook.bone_denture_canine": "Bone Canine Tooth",
+  "item.dental_handbook.bone_denture_molar": "Bone Molar",
+  "item.dental_handbook.gold_denture_incisor": "Gold Incisor",
+  "item.dental_handbook.gold_denture_canine": "Gold Canine Tooth",
+  "item.dental_handbook.gold_denture_molar": "Gold Molar",
+
+
   "death.attack.oral_bleeding": "%1$s punctured the oral artery while eating.",
+
 
   "advancements.dental_handbook.root": "Tooth Decay",
   "advancements.dental_handbook.root.desc": "Oh, it's cavities! It's time to love your mouth!",

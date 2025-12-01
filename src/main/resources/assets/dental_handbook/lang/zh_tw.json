@@ -32,6 +32,15 @@
   "effect.dental_handbook.clean_oral": "潔淨口腔",
   "effect.dental_handbook.ender_affinity": "終界亲和",
 
+
+  "item.dental_handbook.bone_denture_incisor": "骨門齒",
+  "item.dental_handbook.bone_denture_canine": "骨犬齒",
+  "item.dental_handbook.bone_denture_molar": "骨臼齒",
+  "item.dental_handbook.gold_denture_incisor": "金門齒",
+  "item.dental_handbook.gold_denture_canine": "金犬齒",
+  "item.dental_handbook.gold_denture_molar": "金臼齒",
+
+
   "death.attack.oral_bleeding": "%1$s 在吃東西的時候被紮爆了動脈",
 
   "advancements.dental_handbook.root": "蛀牙",

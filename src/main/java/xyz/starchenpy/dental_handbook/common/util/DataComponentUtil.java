@@ -39,4 +39,35 @@ public class DataComponentUtil {
     public static void removeToothpaste(ItemStack itemStack) {
         itemStack.remove(ModDataComponents.TOOTHPASTE);
     }
+
+    /**
+     * 从 DataComponent 获取选择的假牙槽
+     * @param itemStack 牙科工具的 ItemStack
+     * @return  槽位
+     */
+    public static int getSelectDentureSlot(ItemStack itemStack) {
+        Integer slot = itemStack.get(ModDataComponents.SELECTED_DENTURE_SLOT);
+
+        if (slot != null) {
+            return slot;
+        }
+
+        return -1;
+    }
+
+    /**
+     * 从 DataComponent 设置选择的假牙槽
+     * @param itemStack 牙科工具的 ItemStack
+     */
+    public static void setSelectDentureSlot(ItemStack itemStack, int slot) {
+        itemStack.set(ModDataComponents.SELECTED_DENTURE_SLOT, slot);
+    }
+
+    /**
+     * 将选择的假牙槽从某物品上移除
+     * @param itemStack 要移除的物品
+     */
+    public static void removeSelectDentureSlot(ItemStack itemStack) {
+        itemStack.remove(ModDataComponents.SELECTED_DENTURE_SLOT);
+    }
 }

@@ -1,7 +1,6 @@
 package xyz.starchenpy.dental_handbook.common.item.denture;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import org.slf4j.Logger;
 import xyz.starchenpy.dental_handbook.common.item.denture.material.AbstractMaterial;
@@ -31,13 +30,12 @@ public class Denture extends Item {
         }
     }
 
-    /**
-     * 触发假牙效果
-     * @param player    玩家
-     */
-    public void tick(Player player) {
-        // 考虑到性能问题，将校验挪至构造函数，这里不做校验了
-        this.material.tick(this.type, player);
+    public AbstractMaterial getMaterial() {
+        return this.material;
+    }
+
+    public DentureType getType() {
+        return this.type;
     }
 
     private static Properties getItemProp(int maxDamage) {

@@ -34,6 +34,12 @@
   "effect.dental_handbook.clean_oral": "洁净口腔",
   "effect.dental_handbook.ender_affinity": "末影亲和",
 
+  "item.dental_handbook.bone_denture_incisor": "骨门齿",
+  "item.dental_handbook.bone_denture_canine": "骨犬齿",
+  "item.dental_handbook.bone_denture_molar": "骨臼齿",
+  "item.dental_handbook.gold_denture_incisor": "金门齿",
+  "item.dental_handbook.gold_denture_canine": "金犬齿",
+  "item.dental_handbook.gold_denture_molar": "金臼齿",
 
   "death.attack.oral_bleeding": "%1$s 在吃东西的时候被扎爆了动脉",
 
