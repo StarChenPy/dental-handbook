@@ -2,23 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "H": {
-      "item": "dental_handbook:toothbrush_head"
-    },
-    "Q": {
-      "item": "minecraft:quartz"
+    "T": {
+      "item": "dental_handbook:toothpaste_tube"
     },
     "R": {
       "item": "minecraft:redstone"
     }
   },
   "pattern": [
-    " RH",
-    "RQR",
-    "QR "
+    " R ",
+    "RTR",
+    " R "
   ],
   "result": {
     "count": 1,
-    "id": "dental_handbook:redstone_toothbrush"
+    "item": "dental_handbook:redstone_toothpaste"
   }
 }

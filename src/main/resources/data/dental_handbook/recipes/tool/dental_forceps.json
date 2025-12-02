@@ -2,20 +2,20 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "P": {
-      "item": "minecraft:paper"
-    },
     "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "N": {
       "item": "minecraft:iron_nugget"
     }
   },
   "pattern": [
-    " PI",
-    "P P",
-    "IP "
+    "N N",
+    " N ",
+    "I I"
   ],
   "result": {
-    "count": 2,
-    "id": "dental_handbook:toothpaste_tube"
+    "count": 1,
+    "item": "dental_handbook:dental_forceps"
   }
 }

@@ -5,17 +5,17 @@
     "T": {
       "item": "dental_handbook:toothpaste_tube"
     },
-    "B": {
-      "item": "minecraft:blaze_powder"
+    "F": {
+      "item": "minecraft:flint"
     }
   },
   "pattern": [
-    " B ",
-    "BTB",
-    " B "
+    " F ",
+    "FTF",
+    " F "
   ],
   "result": {
     "count": 1,
-    "id": "dental_handbook:blaze_toothpaste"
+    "item": "dental_handbook:flint_toothpaste"
   }
 }

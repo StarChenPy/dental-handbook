@@ -5,17 +5,17 @@
     "T": {
       "item": "dental_handbook:toothpaste_tube"
     },
-    "F": {
-      "item": "minecraft:flint"
+    "L": {
+      "item": "minecraft:lapis_lazuli"
     }
   },
   "pattern": [
-    " F ",
-    "FTF",
-    " F "
+    " L ",
+    "LTL",
+    " L "
   ],
   "result": {
     "count": 1,
-    "id": "dental_handbook:flint_toothpaste"
+    "item": "dental_handbook:lapis_lazuli_toothpaste"
   }
 }

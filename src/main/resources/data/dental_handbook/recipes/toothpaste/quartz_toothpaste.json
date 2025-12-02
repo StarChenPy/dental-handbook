@@ -5,17 +5,17 @@
     "T": {
       "item": "dental_handbook:toothpaste_tube"
     },
-    "L": {
-      "item": "minecraft:lapis_lazuli"
+    "Q": {
+      "item": "minecraft:quartz"
     }
   },
   "pattern": [
-    " L ",
-    "LTL",
-    " L "
+    " Q ",
+    "QTQ",
+    " Q "
   ],
   "result": {
     "count": 1,
-    "id": "dental_handbook:lapis_lazuli_toothpaste"
+    "item": "dental_handbook:quartz_toothpaste"
   }
 }
