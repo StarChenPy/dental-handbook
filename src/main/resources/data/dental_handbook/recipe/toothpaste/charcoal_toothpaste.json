@@ -5,16 +5,17 @@
     "T": {
       "item": "dental_handbook:toothpaste_tube"
     },
-    "Q": {
-      "item": "minecraft:quartz"
+    "C": {
+      "item": "minecraft:charcoal"
     }
   },
   "pattern": [
-    " Q ",
-    "QTQ",
-    " Q "
+    " C ",
+    "CTC",
+    " C "
   ],
   "result": {
-    "item": "dental_handbook:quartz_toothpaste"
+    "count": 1,
+    "id": "dental_handbook:charcoal_toothpaste"
   }
 }

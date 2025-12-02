@@ -24,7 +24,7 @@ public class DentalHandbook {
         ModEffects.register(modEventBus);
         ModParticleType.register(modEventBus);
         ModSounds.register(modEventBus);
-
+        // 1.20.1 还只能通过这种方式注册成就触发器
         modEventBus.addListener(ModTriggers::register);
 
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

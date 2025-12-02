@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "dental_handbook:toothpaste_tube"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    " R ",
+    "RTR",
+    " R "
+  ],
+  "result": {
+    "count": 1,
+    "id": "dental_handbook:redstone_toothpaste"
+  }
+}

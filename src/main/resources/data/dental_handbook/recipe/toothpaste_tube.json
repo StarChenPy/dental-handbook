@@ -15,7 +15,7 @@
     "IP "
   ],
   "result": {
-    "item": "dental_handbook:toothpaste_tube",
-    "count": 2
+    "count": 2,
+    "id": "dental_handbook:toothpaste_tube"
   }
 }

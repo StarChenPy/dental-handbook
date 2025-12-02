@@ -1,0 +1,14 @@
+{
+  "parent": "dental_handbook:item/toothbrush",
+  "overrides": [
+    {
+      "model": "dental_handbook:item/redstone_toothbrush_overlay",
+      "predicate": {
+        "dental_handbook:has_toothpaste": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "dental_handbook:item/redstone_toothbrush"
+  }
+}

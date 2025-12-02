@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "dental_handbook:item/gold_denture_incisor"
+  }
+}
