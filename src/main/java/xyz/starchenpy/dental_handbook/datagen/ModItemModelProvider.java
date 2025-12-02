@@ -1,12 +1,15 @@
 package xyz.starchenpy.dental_handbook.datagen;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import xyz.starchenpy.dental_handbook.common.item.ModItems;
-import xyz.starchenpy.dental_handbook.common.item.denture.Denture;
+import xyz.starchenpy.dental_handbook.common.item.toothbrush.AbstractToothbrush;
+import xyz.starchenpy.dental_handbook.common.item.toothpaste.AbstractToothpaste;
 
 import static xyz.starchenpy.dental_handbook.DentalHandbook.MOD_ID;
 
@@ -15,12 +18,32 @@ public class ModItemModelProvider extends ItemModelProvider {
         super(output, MOD_ID, existingFileHelper);
     }
 
+    /**
+     * 生成本 Mod 中物品的 Model 文件
+     * 解放双手，好耶!
+     */
     @Override
     protected void registerModels() {
         for (DeferredHolder<Item, ? extends Item> holder : ModItems.getAllModItem()) {
-            if (holder.get() instanceof Denture denture) {
-                basicItem(denture);
-                System.out.println("Gen Item ID: " + holder.get().getDescriptionId());
+            if (holder.get() instanceof AbstractToothpaste) {
+                // 生成牙膏 Model 文件
+                withExistingParent(holder.getId().toString(), modLoc("item/toothpaste"))
+                        .texture("layer0", "item/" + holder.getId().getPath());
+            } else if (holder.get() instanceof AbstractToothbrush) {
+                // 覆盖层生成
+                ItemModelBuilder overlay = withExistingParent(holder.getId() + "_overlay", modLoc("item/toothbrush"))
+                        .texture("layer0", "item/" + holder.getId().getPath())
+                        .texture("layer1", "item/toothbrush_overlay");
+
+                // 生成牙刷 Model 文件
+                withExistingParent(holder.getId().toString(), modLoc("item/toothbrush"))
+                        .texture("layer0", "item/" + holder.getId().getPath())
+                        .override()
+                        .predicate(ResourceLocation.fromNamespaceAndPath(MOD_ID, "has_toothpaste"), 1)
+                        .model(overlay);
+            } else {
+                // 其它物品
+                basicItem(holder.get());
             }
         }
     }

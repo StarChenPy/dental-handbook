@@ -1,7 +1,0 @@
-{
-  "parent": "dental_handbook:item/toothbrush",
-  "textures": {
-    "layer0": "dental_handbook:item/redstone_toothbrush",
-    "layer1": "dental_handbook:item/toothbrush_overlay"
-  }
-}
