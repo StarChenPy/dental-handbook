@@ -68,9 +68,9 @@ public class AbstractToothbrush extends Item {
     @Override
     @ParametersAreNonnullByDefault
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand hand) {
-        InteractionHand offHand = hand == InteractionHand.MAIN_HAND ? InteractionHand.OFF_HAND : InteractionHand.MAIN_HAND;
+        InteractionHand otherHand = hand == InteractionHand.MAIN_HAND ? InteractionHand.OFF_HAND : InteractionHand.MAIN_HAND;
         ItemStack toothbrush = player.getItemInHand(hand);
-        ItemStack toothpaste = player.getItemInHand(offHand);
+        ItemStack toothpaste = player.getItemInHand(otherHand);
 
         // 刷牙或者抹牙膏
         if (toothpaste.getItem() instanceof AbstractToothpaste || DataComponentUtil.getToothpaste(toothbrush) instanceof AbstractToothpaste) {
@@ -79,6 +79,10 @@ public class AbstractToothbrush extends Item {
         }
 
         return InteractionResultHolder.fail(toothbrush);
+    }
+
+    private EquipmentSlot getUseHand(Player player) {
+        return player.getUsedItemHand() == InteractionHand.MAIN_HAND ? EquipmentSlot.MAINHAND : EquipmentSlot.OFFHAND;
     }
 
     /**
@@ -98,6 +102,7 @@ public class AbstractToothbrush extends Item {
             DataComponentUtil.removeToothpaste(itemStack);
             if (entity instanceof ServerPlayer player) {
                 player.getCooldowns().addCooldown(this, getCooldown());
+                itemStack.hurtAndBreak(1, player, this.getUseHand(player));
                 ModTriggers.AFTER_BRUSHING_TEETH.get().trigger(player, itemStack);
             }
             return itemStack;
@@ -108,7 +113,7 @@ public class AbstractToothbrush extends Item {
             entity.getMainHandItem().hurtAndBreak(1, entity, EquipmentSlot.MAINHAND);
             DataComponentUtil.setToothpaste(itemStack, item);
         } else if (entity.getOffhandItem().getItem() instanceof AbstractToothpaste item) {
-            entity.getMainHandItem().hurtAndBreak(1, entity, EquipmentSlot.OFFHAND);
+            entity.getOffhandItem().hurtAndBreak(1, entity, EquipmentSlot.OFFHAND);
             DataComponentUtil.setToothpaste(itemStack, item);
         }
 
@@ -122,7 +127,7 @@ public class AbstractToothbrush extends Item {
             return;
         }
 
-        if (!(DataComponentUtil.getToothpaste(stack) instanceof AbstractToothpaste)) {
+        if (DataComponentUtil.getToothpaste(stack) == null) {
             return;
         }
 
