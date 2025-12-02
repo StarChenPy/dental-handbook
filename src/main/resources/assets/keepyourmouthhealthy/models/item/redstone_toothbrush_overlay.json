@@ -1,7 +1,0 @@
-{
-  "parent": "keepyourmouthhealthy:item/toothbrush",
-  "textures": {
-    "layer0": "keepyourmouthhealthy:item/redstone_toothbrush",
-    "layer1": "keepyourmouthhealthy:item/toothbrush_overlay"
-  }
-}

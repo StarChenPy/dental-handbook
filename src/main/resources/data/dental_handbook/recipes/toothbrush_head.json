@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    "B": {
+      "item": "dental_handbook:bristle"
+    },
+    "L": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "LQL"
+  ],
+  "result": {
+    "item": "dental_handbook:toothbrush_head",
+    "count": 2
+  }
+}

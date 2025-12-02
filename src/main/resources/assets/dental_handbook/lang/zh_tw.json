@@ -1,0 +1,146 @@
+{
+  "itemGroup.dental_handbook.tab": "牙科手册",
+
+  "tooltip.dental_handbook.redstone_toothbrush": "§7這！就！是！紅石科技！",
+
+  "item.dental_handbook.wooden_toothbrush": "木牙刷",
+  "item.dental_handbook.redstone_toothbrush": "紅石動力牙刷",
+
+  "item.dental_handbook.charcoal_toothpaste": "木炭牙膏",
+  "item.dental_handbook.flint_toothpaste": "燧石牙膏",
+  "item.dental_handbook.quartz_toothpaste": "石英牙膏",
+  "item.dental_handbook.redstone_toothpaste": "紅石牙膏",
+  "item.dental_handbook.lapis_lazuli_toothpaste": "青金石牙膏",
+  "item.dental_handbook.golden_apple_toothpaste": "金蘋果牙膏",
+  "item.dental_handbook.ender_toothpaste": "終界牙膏",
+  "item.dental_handbook.blaze_toothpaste": "烈焰牙膏",
+
+  "item.dental_handbook.dental_forceps": "拔牙鉗",
+  "item.dental_handbook.dental_hammer": "鑲牙錘",
+
+  "item.dental_handbook.handbook": "牙科手册",
+  "item.dental_handbook.bristle": "豬鬃",
+  "item.dental_handbook.toothbrush_head": "牙刷頭",
+  "item.dental_handbook.toothpaste_tube": "牙膏皮",
+  "item.dental_handbook.incisor": "門齒",
+  "item.dental_handbook.canine": "犬齒",
+  "item.dental_handbook.molar": "臼齒",
+  "item.dental_handbook.wisdom": "智齒",
+
+  "effect.dental_handbook.tooth_decay": "蛀牙",
+  "effect.dental_handbook.injury_oral": "口腔受損",
+  "effect.dental_handbook.clean_oral": "潔淨口腔",
+  "effect.dental_handbook.ender_affinity": "終界亲和",
+
+
+  "item.dental_handbook.bone_denture_incisor": "骨門齒",
+  "item.dental_handbook.bone_denture_canine": "骨犬齒",
+  "item.dental_handbook.bone_denture_molar": "骨臼齒",
+  "item.dental_handbook.gold_denture_incisor": "金門齒",
+  "item.dental_handbook.gold_denture_canine": "金犬齒",
+  "item.dental_handbook.gold_denture_molar": "金臼齒",
+
+
+  "death.attack.oral_bleeding": "%1$s 在吃東西的時候被紮爆了動脈",
+
+  "advancements.dental_handbook.root": "蛀牙",
+  "advancements.dental_handbook.root.desc": "哦，是蛀牙！是時候愛護下你的嘴了！",
+
+  "advancements.dental_handbook.massive_bleeding": "大出血",
+  "advancements.dental_handbook.massive_bleeding.desc": "在至少3級的口腔損傷下吃東西，真疼！",
+
+  "advancements.dental_handbook.teeth_whitening": "牙齒美白",
+  "advancements.dental_handbook.teeth_whitening.desc": "第一次刷牙",
+
+  "advancements.dental_handbook.do_not_open_your_mouth": "現在不要張嘴",
+  "advancements.dental_handbook.do_not_open_your_mouth.desc": "獲得至少4級的蛀牙",
+
+  "advancements.dental_handbook.redstone_oscillation": "紅石動盪",
+  "advancements.dental_handbook.redstone_oscillation.desc": "它怎麼震起來的?!",
+
+  "sounds.dental_handbook.brushing_teeth_sound": "刷牙",
+
+  "menu.title.dental_handbook.select_tooth": "选择牙齒",
+
+  "handbook.dental_handbook.landing_text": "你的牙開始痛了嗎？$(p)別擔心，《牙科手冊》會教你處理蛀牙，重拾無痛美食！",
+
+  "handbook.dental_handbook.category.basics": "基礎",
+  "handbook.dental_handbook.category.basics.desc": "這裡是牙科手冊Mod中的基礎機制，不看可玩不了～",
+
+  "handbook.dental_handbook.entry.handbook": "關於《牙科手冊》",
+  "handbook.dental_handbook.entry.handbook.page0": "    $(item)《牙科手冊》$()包含了所有關於你牙齒的知識。$(p)    如你所預料的，所有資訊都記載在這裡。有可能你並用不到這本書，但總有人要用到的，對吧(●´ω｀●)ゞ$(p)    如果哪天對嘴裡發生的事情感到困惑，不如來翻翻這本書吧！",
+  "handbook.dental_handbook.entry.handbook.page1": "合成《牙科手冊》，如此容易！",
+  "handbook.dental_handbook.entry.handbook.page2": "    任何以$(o)斜體$()書寫的條目均為$(thing)基礎$()條目，是關於你口腔問題最基礎的知識，建議優先閱讀，大多數章節包含一個或多個，所以最好仔細看看。$(p)    對了，上面這句話基本照搬植物魔法。",
+
+  "handbook.dental_handbook.entry.tooth_decay": "蛀牙",
+  "handbook.dental_handbook.entry.tooth_decay.page0": "    有時候你會注意到，在某次吃東西之後，你似乎$(item)蛀牙$()了。$(p)    說真的，這玩意一看就不是什麼友善的buff，喝牛奶毫無疑問並不能祛除它，畢竟它並非一種毒素。$(p)    如果你不幸中招了，首先，$(item)蛀牙$()並不會自然消失，如果不加干預，它肯定會一直陪伴你。",
+  "handbook.dental_handbook.entry.tooth_decay.page2": "    其次，你會發現，你的$(thing)進食速度$()變慢了，具體的數值取決於你$(item)蛀牙$()的程度。$(p)    最後，如果你一直不加干預，任其成長，肯定會發生更糟糕的事情。$(p)    你的牙齒尊重死亡，如果你沒開$(thing)死亡不掉落$()，它會在你死後消失，反之亦然。",
+
+  "handbook.dental_handbook.entry.injury_oral": "口腔受損",
+  "handbook.dental_handbook.entry.injury_oral.page0": "    這是長期不$(thing)刷牙$()的惡果。$(p)    在你的$(item)蛀牙$()嚴重到一定程度後，繼續進食就有可能造成$(item)口腔損傷$()。$(p)    當你吃完東西以後，你的嘴會以一種明顯的方式開始抗議，比如大出血，讓吃飯變成一件令人受傷的事。$(p)    真是讓人很不開心。",
+  "handbook.dental_handbook.entry.injury_oral.page1": "    $(thing)口腔出血$()造成的傷害取決於你的嚴重程度。毫無疑問，盔甲對於$(thing)口腔出血$()沒什麼用。$(p)    $(strike)不過如果你故意因此而死，會看到非常有趣的死亡提示。$()",
+
+  "handbook.dental_handbook.entry.clean_oral": "潔淨口腔",
+  "handbook.dental_handbook.entry.clean_oral.page0": "    這個buff是你保持健康的關鍵$(p)    使用某些牙膏完整$(thing)刷牙$()後，可以獲得$(item)潔淨口腔$()效果，在持續時間內，吃東西不會再獲得$(item)蛀牙$()。",
+
+  "handbook.dental_handbook.entry.brush_teeth": "刷牙",
+  "handbook.dental_handbook.entry.brush_teeth.page0": "    對付$(item)蛀牙$()最經濟且有效的方式，只需幾秒鐘，即可獲得長效保護。$(p)    想要$(thing)刷牙$()，要將牙刷與牙膏分別放在左右兩隻手上，然後右鍵長按來給牙刷塗上牙膏。$(p)    最後，只要右鍵長按塗上牙膏的牙刷，即可開始$(thing)刷牙$()。",
+  "handbook.dental_handbook.entry.brush_teeth.page2": "    理所當然的，$(thing)刷牙$()要持續一段時間，然後你就能收穫乾乾淨淨的嘴巴了。$(p)    在完整的刷完一次牙後，根據使用的牙膏，可以消減$(item)蛀牙$()的等級。",
+
+  "handbook.dental_handbook.category.toothbrush": "牙刷",
+  "handbook.dental_handbook.category.toothbrush.desc": "關於牙刷的知識，但是不止有牙刷？",
+
+  "handbook.dental_handbook.entry.toothbrush": "牙刷",
+  "handbook.dental_handbook.entry.toothbrush.page0": "    模組最核心的物品之一，為你提供祛蛀的強勁動力。$(p)    要想合成牙刷，首先需要取得$(item)豬鬃$()，這是所有牙刷的基礎材料。$(p)    有了它，首先你可以合成最基礎的牙刷，來立刻為你的進食保駕護航。",
+  "handbook.dental_handbook.entry.toothbrush.page1": "擊殺豬掉落",
+  "handbook.dental_handbook.entry.toothbrush.page2": "    在剛開始，木牙刷大概是你最好的選擇，$(item)木牙刷$()雖然便宜，但是確實能夠提供最核心的功能，也就是說，它可以用來$(thing)刷牙$()。$(p)    老天，真是很有道理的廢話。",
+  "handbook.dental_handbook.entry.toothbrush.page3": "合成木牙刷",
+
+  "handbook.dental_handbook.entry.redstone_toothbrush": "紅石動力牙刷",
+  "handbook.dental_handbook.entry.redstone_toothbrush.page0": "    相比於$(item)木牙刷$()，擁有更高的耐久度，同時可以加快$(thing)刷牙$()的速度。$(p)    雖然不知道怎麼震動的，但本質上確實是個牙刷，不能用作他用。",
+  "handbook.dental_handbook.entry.redstone_toothbrush.page1": "合成牙刷頭",
+  "handbook.dental_handbook.entry.redstone_toothbrush.page2": "合成紅石動力牙刷",
+
+  "handbook.dental_handbook.category.toothpaste": "牙膏",
+  "handbook.dental_handbook.category.toothpaste.desc": "各種各樣的牙膏，什麼口味的都有哦！",
+
+  "handbook.dental_handbook.entry.toothpaste": "牙膏",
+  "handbook.dental_handbook.entry.toothpaste.page0": "    模組最核心的物品之一，為你提供無微不至的護理。$(p)    合成任何牙膏都需要$(item)牙膏管$()，如果沒有$(item)牙膏管$()，就像西方沒有了耶路撒冷。",
+  "handbook.dental_handbook.entry.toothpaste.page1": "合成牙膏管",
+  "handbook.dental_handbook.entry.toothpaste.page2": "    $(item)木炭牙膏$()是你前期最得力的助手之一，材料簡單，口感超絕，可能就是長得醜了點。$(p)    作為牙膏$(thing)刷牙$()後，提供$(item)潔淨口腔$()效果，最高可以祛除4級的$(item)蛀牙$()。$(p)    其實照理來說刷完要漱口，否則嘴會變黑。",
+  "handbook.dental_handbook.entry.toothpaste.page3": "合成木炭牙膏，1攻1防，最簡單的牙膏",
+  "handbook.dental_handbook.entry.toothpaste.page4": "    如果你的$(item)蛀牙$()等級太高了怎麼辦，木炭恐怕已經無能為力，而假如其他材料你難以獲得的話，恐怕你不得不使用$(item)燧石牙膏$()。$(p)    作為牙膏$(thing)刷牙$()後，可以祛除1層$(item)蛀牙$()效果，最高可以祛除4級的$(item)蛀牙$()。$(p)    它粗糙的顆粒會磨損你的口腔，不過對於祛蛀這方面，它非常專業。",
+  "handbook.dental_handbook.entry.toothpaste.page5": "合成燧石牙膏",
+
+  "handbook.dental_handbook.entry.golden_apple_toothpaste": "金蘋果牙膏",
+  "handbook.dental_handbook.entry.golden_apple_toothpaste.page0": "    由金蘋果製作的牙膏，昂貴，但很好吃。$(p)    作為牙膏$(thing)刷牙$()後，提供$(item)潔淨口腔$()效果，最高可以祛除4級的$(item)蛀牙$()。$(p)    另外，會額外提供$(item)生命恢復$()的效果。",
+  "handbook.dental_handbook.entry.golden_apple_toothpaste.page1": "合成金蘋果牙膏，味道甜甜的～",
+
+  "handbook.dental_handbook.entry.lapis_lazuli_toothpaste": "青金石牙膏",
+  "handbook.dental_handbook.entry.lapis_lazuli_toothpaste.page0": "    作為牙膏$(thing)刷牙$()後，提供$(item)潔淨口腔$()效果，最高可以祛除3級的$(item)蛀牙$()。$(p)    另外，會額外提供$(item)幸運$()的效果。不過並不能給你的嘴附魔。",
+  "handbook.dental_handbook.entry.lapis_lazuli_toothpaste.page1": "合成青金石牙膏",
+
+  "handbook.dental_handbook.entry.quartz_toothpaste": "石英牙膏",
+  "handbook.dental_handbook.entry.quartz_toothpaste.page0": "    作為牙膏$(thing)刷牙$()後，提供$(item)潔淨口腔$()效果，最高可以祛除4級的$(item)蛀牙$()。$(p)    強力祛蛀，不傷嘴。",
+  "handbook.dental_handbook.entry.quartz_toothpaste.page1": "合成石英牙膏",
+
+  "handbook.dental_handbook.entry.redstone_toothpaste": "紅石牙膏",
+  "handbook.dental_handbook.entry.redstone_toothpaste.page0": "    作為牙膏$(thing)刷牙$()後，提供$(item)潔淨口腔$()效果，最高可以祛除3級的$(item)蛀牙$()。$(p)    與紅石動力牙刷並沒有組合技。",
+  "handbook.dental_handbook.entry.redstone_toothpaste.page1": "合成紅石牙膏",
+
+  "handbook.dental_handbook.entry.blaze_toothpaste": "烈焰牙膏",
+  "handbook.dental_handbook.entry.blaze_toothpaste.page0": "    作為牙膏$(thing)刷牙$()後，提供$(item)潔淨口腔$()效果，最高可以祛除4級的$(item)蛀牙$()。$(p)    另外，會額外提供$(item)力量$()的效果。$(p)    不過說真的，把烈焰粉直接塞到嘴裡大概不會很舒服。",
+  "handbook.dental_handbook.entry.blaze_toothpaste.page1": "合成烈焰牙膏",
+
+  "handbook.dental_handbook.entry.ender_toothpaste": "終界牙膏",
+  "handbook.dental_handbook.entry.ender_toothpaste.page0": "    作為牙膏$(thing)刷牙$()後，提供$(item)潔淨口腔$()效果，最高可以祛除3級的$(item)蛀牙$()。$(p)    會額外提供$(item)終界親和$()效果，這讓你直視終界使者不會激怒牠了，其次，消除了終界珍珠傳送時的傷害。",
+  "handbook.dental_handbook.entry.ender_toothpaste.page1": "合成終界牙膏",
+
+  "handbook.dental_handbook.category.denture": "假牙",
+  "handbook.dental_handbook.category.denture.desc": "你被強化了，快吃！",
+
+  "handbook.dental_handbook.entry.dental_forceps": "拔牙鉗(未完成)",
+  "handbook.dental_handbook.entry.dental_forceps.page0": "    作為治療牙痛的終極絕招，只要你還有牙，$(item)拔牙鉗$()可以從你的嘴裡拔下一顆牙，同時清除你身上所有的蛀牙效果。$(p)    不過鑒於醫療水平有限，這會造成一點傷害，同時附加$(item)口腔損傷$()效果。$(p)    值得注意的是，你的牙齒越少，你的進食速度就越慢，直到你徹底無法進食。",
+  "handbook.dental_handbook.entry.dental_forceps.page1": "合成拔牙鉗",
+  "handbook.dental_handbook.entry.dental_forceps.page2": "    另外，你可以用它痛擊怪物，有時候可以敲出一顆牙來。物理學，很神奇吧？"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "handbook.dental_handbook.entry.redstone_toothbrush",
+  "category": "dental_handbook:toothbrush",
+  "icon": "dental_handbook:redstone_toothbrush",
+  "pages": [
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.redstone_toothbrush.page0"
+    },
+    {
+      "type": "crafting",
+      "recipe": "dental_handbook:toothbrush_head",
+      "text": "handbook.dental_handbook.entry.redstone_toothbrush.page1"
+    },
+    {
+      "type": "crafting",
+      "recipe": "dental_handbook:toothbrush/redstone_toothbrush",
+      "text": "handbook.dental_handbook.entry.redstone_toothbrush.page2"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "handbook.dental_handbook.entry.clean_oral",
+  "category": "dental_handbook:basics",
+  "icon": "dental_handbook:textures/mob_effect/clean_oral.png",
+  "pages": [
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.clean_oral.page0"
+    },    {
+      "type": "image",
+      "images": [
+        "dental_handbook:textures/gui/handbook/clean_oral.png"
+      ]
+    }
+  ]
+}

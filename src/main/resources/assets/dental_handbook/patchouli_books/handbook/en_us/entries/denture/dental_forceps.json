@@ -1,0 +1,21 @@
+{
+  "name": "handbook.dental_handbook.entry.dental_forceps",
+  "category": "dental_handbook:denture",
+  "icon": "dental_handbook:dental_forceps",
+  "priority": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.dental_forceps.page0"
+    },
+    {
+      "type": "crafting",
+      "recipe": "dental_handbook:tool/dental_forceps",
+      "text": "handbook.dental_handbook.entry.dental_forceps.page1"
+    },
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.dental_forceps.page2"
+    }
+  ]
+}

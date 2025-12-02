@@ -1,0 +1,22 @@
+{
+  "name": "handbook.dental_handbook.entry.tooth_decay",
+  "category": "dental_handbook:basics",
+  "icon": "dental_handbook:textures/mob_effect/tooth_decay.png",
+  "priority": true,
+  "pages": [
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.tooth_decay.page0"
+    },
+    {
+      "type": "image",
+      "images": [
+        "dental_handbook:textures/gui/handbook/tooth_decay.png"
+      ]
+    },
+    {
+      "type": "text",
+      "text": "handbook.dental_handbook.entry.tooth_decay.page2"
+    }
+  ]
+}

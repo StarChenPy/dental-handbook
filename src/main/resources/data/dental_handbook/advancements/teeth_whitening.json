@@ -1,0 +1,19 @@
+{
+  "parent": "dental_handbook:root",
+  "display": {
+    "title": {
+      "translate": "advancements.dental_handbook.teeth_whitening"
+    },
+    "description": {
+      "translate": "advancements.dental_handbook.teeth_whitening.desc"
+    },
+    "icon": {
+      "item": "dental_handbook:wooden_toothbrush"
+    }
+  },
+  "criteria": {
+    "teeth_whitening": {
+      "trigger": "dental_handbook:after_brushing_teeth"
+    }
+  }
+}

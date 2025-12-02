@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "xyz.starchenpy.dental_handbook.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "dental_handbook.refmap.json",
+  "mixins": [
+    "LivingEntityMixin"
+  ],
+  "client": [
+    "ItemInHandRendererMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

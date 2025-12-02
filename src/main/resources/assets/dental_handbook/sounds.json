@@ -1,0 +1,12 @@
+{
+  "brushing_teeth_sound": {
+    "category": "voice",
+    "subtitle": "sounds.dental_handbook.brushing_teeth_sound",
+    "sounds": [
+      {
+        "name": "dental_handbook:brushing_teeth_sound",
+        "stream": true
+      }
+    ]
+  }
+}

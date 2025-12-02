@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "T": {
+      "item": "dental_handbook:toothpaste_tube"
+    },
+    "C": {
+      "item": "minecraft:charcoal"
+    }
+  },
+  "pattern": [
+    " C ",
+    "CTC",
+    " C "
+  ],
+  "result": {
+    "item": "dental_handbook:charcoal_toothpaste"
+  }
+}

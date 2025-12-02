@@ -1,0 +1,147 @@
+{
+  "itemGroup.dental_handbook.tab": "Dental Handbook",
+
+  "tooltip.dental_handbook.redstone_toothbrush": "§7This is Redstone Technology!",
+
+  "item.dental_handbook.wooden_toothbrush": "Wooden Toothbrush",
+  "item.dental_handbook.redstone_toothbrush": "Redstone-powered Toothbrush",
+
+  "item.dental_handbook.charcoal_toothpaste": "Charcoal Toothpaste",
+  "item.dental_handbook.flint_toothpaste": "Flint Toothpaste",
+  "item.dental_handbook.quartz_toothpaste": "Quartz Toothpaste",
+  "item.dental_handbook.redstone_toothpaste": "Redstone Toothpaste",
+  "item.dental_handbook.lapis_lazuli_toothpaste": "Lapis Lazuli Toothpaste",
+  "item.dental_handbook.golden_apple_toothpaste": "Golden Apple Toothpaste",
+  "item.dental_handbook.ender_toothpaste": "Ender Toothpaste",
+  "item.dental_handbook.blaze_toothpaste": "Blaze Toothpaste",
+
+  "item.dental_handbook.dental_forceps": "Dental Forceps",
+  "item.dental_handbook.dental_hammer": "Dental Hammer",
+
+  "item.dental_handbook.handbook": "Dental Handbook",
+  "item.dental_handbook.bristle": "Bristle",
+  "item.dental_handbook.toothbrush_head": "Toothbrush Head",
+  "item.dental_handbook.toothpaste_tube": "Toothbrush Tube",
+  "item.dental_handbook.incisor": "Incisor",
+  "item.dental_handbook.canine": "Canine Tooth",
+  "item.dental_handbook.molar": "Molar",
+  "item.dental_handbook.wisdom": "Wisdom Tooth",
+
+  "effect.dental_handbook.tooth_decay": "Tooth Decay",
+  "effect.dental_handbook.injury_oral": "Injury Oral",
+  "effect.dental_handbook.clean_oral": "Clean Oral",
+  "effect.dental_handbook.ender_affinity": "Ender Affinity",
+
+
+  "item.dental_handbook.bone_denture_incisor": "Bone Incisor",
+  "item.dental_handbook.bone_denture_canine": "Bone Canine Tooth",
+  "item.dental_handbook.bone_denture_molar": "Bone Molar",
+  "item.dental_handbook.gold_denture_incisor": "Gold Incisor",
+  "item.dental_handbook.gold_denture_canine": "Gold Canine Tooth",
+  "item.dental_handbook.gold_denture_molar": "Gold Molar",
+
+
+  "death.attack.oral_bleeding": "%1$s punctured the oral artery while eating.",
+
+
+  "advancements.dental_handbook.root": "Tooth Decay",
+  "advancements.dental_handbook.root.desc": "Oh, it's cavities! It's time to love your mouth!",
+
+  "advancements.dental_handbook.massive_bleeding": "Massive Bleeding",
+  "advancements.dental_handbook.massive_bleeding.desc": "Eating with at least 3 level of oral injury. It really hurts!",
+
+  "advancements.dental_handbook.teeth_whitening": "Teeth Whitening",
+  "advancements.dental_handbook.teeth_whitening.desc": "First brushing teeth",
+
+  "advancements.dental_handbook.do_not_open_your_mouth": "Don't open your mouth",
+  "advancements.dental_handbook.do_not_open_your_mouth.desc": "Obtain at least level 4 tooth decay",
+
+  "advancements.dental_handbook.redstone_oscillation": "Redstone Oscillation",
+  "advancements.dental_handbook.redstone_oscillation.desc": "How did it vibrate?!",
+
+  "sounds.dental_handbook.brushing_teeth_sound": "Brushing Teeth",
+
+  "menu.title.dental_handbook.select_tooth": "Select Tooth",
+
+  "handbook.dental_handbook.landing_text": "Is your tooth starting to ache? $(p)Don't worry, the $(item)Dental Handbook$() will teach you how to deal with cavities and reclaim pain-free feasting!",
+
+  "handbook.dental_handbook.category.basics": "Basics",
+  "handbook.dental_handbook.category.basics.desc": "This contains the basic mechanics of the Dental Handbook mod. You can't play without reading this~",
+
+  "handbook.dental_handbook.entry.handbook": "About the Dental Handbook",
+  "handbook.dental_handbook.entry.handbook.page0": "The $(item)Dental Handbook$() contains all knowledge about your teeth. $(p)As you might expect, all information is recorded here. You might not need this book, but someone will, right? (●´ω｀●)ゞ $(p)If you ever feel confused about what's happening in your mouth, come flip through this book!",
+  "handbook.dental_handbook.entry.handbook.page1": "Crafting the $(item)Dental Handbook$() is so easy!",
+  "handbook.dental_handbook.entry.handbook.page2": "Any entries written in $(o)italics$() are $(thing)basic$() entries - fundamental knowledge about your oral health. Recommended to read first. Most chapters contain one or more of these, so better look carefully. $(p)P.S. This sentence was basically copied from Botania.",
+
+  "handbook.dental_handbook.entry.tooth_decay": "Tooth Decay",
+  "handbook.dental_handbook.entry.tooth_decay.page0": "Sometimes after eating something, you might notice you've got $(item)Tooth Decay$(). $(p)Seriously, this doesn't look like a friendly buff. Drinking milk definitely won't remove it, as it's not a poison. $(p)If you're unlucky enough to get it, first: $(item)Tooth Decay$() won't disappear naturally. Without intervention, it'll stay with you forever.",
+  "handbook.dental_handbook.entry.tooth_decay.page2": "Second, you'll notice your $(thing)eating speed$() slows down, with the exact value depending on your $(item)Tooth Decay$() severity. $(p)Finally, if left untreated, worse things will happen. $(p)Your teeth respect death - if you don't have $(thing)keepInventory$() enabled, they'll disappear when you die. Vice versa.",
+
+  "handbook.dental_handbook.entry.injury_oral": "Oral Injury",
+  "handbook.dental_handbook.entry.injury_oral.page0": "This is the consequence of long-term neglect of $(thing)tooth brushing$(). $(p)When your $(item)Tooth Decay$() reaches a certain severity, continued eating may cause $(item)Oral Injury$(). $(p)After eating, your mouth will protest in obvious ways, like heavy bleeding, turning meals into painful experiences. $(p)Really unpleasant.",
+  "handbook.dental_handbook.entry.injury_oral.page1": "The damage from $(thing)Oral Bleeding$() depends on severity. Armor is useless against $(thing)Oral Bleeding$(). $(p)$(strike)Though if you intentionally die this way, you'll get a very interesting death message.$()",
+
+  "handbook.dental_handbook.entry.clean_oral": "Clean Oral",
+  "handbook.dental_handbook.entry.clean_oral.page0": "This buff is key to maintaining health. $(p)After complete $(thing)tooth brushing$() with certain toothpaste, you'll gain $(item)Clean Oral$() effect. During this duration, eating won't cause $(item)Tooth Decay$().",
+
+  "handbook.dental_handbook.entry.brush_teeth": "Tooth Brushing",
+  "handbook.dental_handbook.entry.brush_teeth.page0": "The most economical and effective way to combat $(item)Tooth Decay$(). Just a few seconds for long-lasting protection. $(p)To $(thing)brush teeth$(), hold toothpaste and toothbrush in different hands, then right-click and hold to apply toothpaste. $(p)Finally, right-click and hold the toothpaste-coated toothbrush to start $(thing)brushing$().",
+  "handbook.dental_handbook.entry.brush_teeth.page2": "Naturally, $(thing)brushing$() takes some time. After completion, you'll get a clean mouth. $(p)After full brushing, depending on toothpaste used, it can reduce $(item)Tooth Decay$() levels.",
+
+  "handbook.dental_handbook.category.toothbrush": "Toothbrush",
+  "handbook.dental_handbook.category.toothbrush.desc": "Knowledge about toothbrushes, but not limited to them?",
+
+  "handbook.dental_handbook.entry.toothbrush": "Toothbrush",
+  "handbook.dental_handbook.entry.toothbrush.page0": "One of the mod's core items, providing strong cavity-fighting power. $(p)To craft a toothbrush, first obtain $(item)Pig Bristles$() - the base material for all toothbrushes. $(p)With these, you can first craft a basic toothbrush to protect your eating immediately.",
+  "handbook.dental_handbook.entry.toothbrush.page1": "Drops from pigs",
+  "handbook.dental_handbook.entry.toothbrush.page2": "Early game, the $(item)Wooden Toothbrush$() is your best choice. Cheap but provides core functionality - it can be used for $(thing)brushing$(). $(p)Oh god, what an obvious statement.",
+  "handbook.dental_handbook.entry.toothbrush.page3": "Craft Wooden Toothbrush",
+
+  "handbook.dental_handbook.entry.redstone_toothbrush": "Redstone-powered Toothbrush",
+  "handbook.dental_handbook.entry.redstone_toothbrush.page0": "Compared to $(item)Wooden Toothbrush$(), has higher durability and faster $(thing)brushing$() speed. $(p)Not sure how the vibration works, but it's essentially a toothbrush - no other uses.",
+  "handbook.dental_handbook.entry.redstone_toothbrush.page1": "Craft brush head",
+  "handbook.dental_handbook.entry.redstone_toothbrush.page2": "Craft Redstone-powered Toothbrush",
+
+  "handbook.dental_handbook.category.toothpaste": "Toothpaste",
+  "handbook.dental_handbook.category.toothpaste.desc": "Various toothpastes, all flavors available!",
+
+  "handbook.dental_handbook.entry.toothpaste": "Toothpaste",
+  "handbook.dental_handbook.entry.toothpaste.page0": "Another core item of the mod, providing meticulous care. $(p)All toothpaste requires $(item)Toothpaste Tube$(). Without it, it's like the West without Jerusalem.",
+  "handbook.dental_handbook.entry.toothpaste.page1": "Craft toothpaste tube",
+  "handbook.dental_handbook.entry.toothpaste.page2": "$(item)Charcoal Toothpaste$() is your best early-game ally. Simple materials, great mouthfeel - just looks ugly. $(p)When used for $(thing)brushing$(), provides $(item)Clean Oral$() effect and removes up to level 4 $(item)Tooth Decay$(). $(p)Actually should rinse after use, or mouth turns black.",
+  "handbook.dental_handbook.entry.toothpaste.page3": "Craft Charcoal Toothpaste - 1 attack 1 defense, simplest toothpaste",
+  "handbook.dental_handbook.entry.toothpaste.page4": "If your $(item)Tooth Decay$() level is too high? Charcoal becomes useless. If other materials are hard to get, try $(item)Flint Toothpaste$(). $(p)When used for $(thing)brushing$(), removes 1 layer of $(item)Tooth Decay$(), up to level 4. $(p)Its rough particles may wear your mouth, but very professional at decay removal.",
+  "handbook.dental_handbook.entry.toothpaste.page5": "Craft Flint Toothpaste",
+
+  "handbook.dental_handbook.entry.golden_apple_toothpaste": "Golden Apple Toothpaste",
+  "handbook.dental_handbook.entry.golden_apple_toothpaste.page0": "Made from golden apples - expensive but tasty. $(p)When used for $(thing)brushing$(), provides $(item)Clean Oral$() effect (up to level 4 $(item)Tooth Decay$()) and extra $(item)Regeneration$().",
+  "handbook.dental_handbook.entry.golden_apple_toothpaste.page1": "Craft Golden Apple Toothpaste - sweet flavor~",
+
+  "handbook.dental_handbook.entry.lapis_lazuli_toothpaste": "Lapis Lazuli Toothpaste",
+  "handbook.dental_handbook.entry.lapis_lazuli_toothpaste.page0": "When used for $(thing)brushing$(), provides $(item)Clean Oral$() effect (up to level 3 $(item)Tooth Decay$()) and $(item)Luck$(). But can't enchant your mouth.",
+  "handbook.dental_handbook.entry.lapis_lazuli_toothpaste.page1": "Craft Lapis Lazuli Toothpaste",
+
+  "handbook.dental_handbook.entry.quartz_toothpaste": "Quartz Toothpaste",
+  "handbook.dental_handbook.entry.quartz_toothpaste.page0": "When used for $(thing)brushing$(), provides $(item)Clean Oral$() effect (up to level 4 $(item)Tooth Decay$()). $(p)Powerful decay removal, mouth-friendly.",
+  "handbook.dental_handbook.entry.quartz_toothpaste.page1": "Craft Quartz Toothpaste",
+
+  "handbook.dental_handbook.entry.redstone_toothpaste": "Redstone Toothpaste",
+  "handbook.dental_handbook.entry.redstone_toothpaste.page0": "When used for $(thing)brushing$(), provides $(item)Clean Oral$() effect (up to level 3 $(item)Tooth Decay$()). $(p)No combo moves with Redstone-powered Toothbrush.",
+  "handbook.dental_handbook.entry.redstone_toothpaste.page1": "Craft Redstone Toothpaste",
+
+  "handbook.dental_handbook.entry.blaze_toothpaste": "Blaze Toothpaste",
+  "handbook.dental_handbook.entry.blaze_toothpaste.page0": "    When used for $(thing)brushing$(), provides $(item)Clean Oral$() effect (removes up to level 4 $(item)Tooth Decay$()) and extra $(item)Strength$(). $(p)    Seriously though, putting blaze powder directly in your mouth probably isn't comfortable.",
+  "handbook.dental_handbook.entry.blaze_toothpaste.page1": "Craft Blaze Toothpaste",
+
+  "handbook.dental_handbook.entry.ender_toothpaste": "Ender Toothpaste",
+  "handbook.dental_handbook.entry.ender_toothpaste.page0": "    When used for $(thing)brushing$(), provides $(item)Clean Oral$() effect (removes up to level 3 $(item)Tooth Decay$()) and $(item)Ender Affinity$(). This lets you stare at Endermen without provoking them, and removes teleportation damage from Ender Pearls.",
+  "handbook.dental_handbook.entry.ender_toothpaste.page1": "Craft Ender Toothpaste",
+
+  "handbook.dental_handbook.category.denture": "Dentures",
+  "handbook.dental_handbook.category.denture.desc": "You are enhanced, go eat!",
+
+  "handbook.dental_handbook.entry.dental_forceps": "Dental Forceps (WIP)",
+  "handbook.dental_handbook.entry.dental_forceps.page0": "The ultimate solution for toothache. As long as you have teeth, $(item)Dental Forceps$() can extract one while removing all $(item)Tooth Decay$(). $(p)Due to limited medical technology, this causes some damage and adds $(item)Oral Injury$(). $(p)Note: Fewer teeth mean slower eating until you can't eat at all.",
+  "handbook.dental_handbook.entry.dental_forceps.page1": "Craft Dental Forceps",
+  "handbook.dental_handbook.entry.dental_forceps.page2": "Bonus: Can be used to attack mobs - might knock out a tooth. Physics, amazing right?"
+}
