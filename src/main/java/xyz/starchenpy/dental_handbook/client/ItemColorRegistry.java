@@ -12,9 +12,7 @@ import xyz.starchenpy.dental_handbook.common.item.toothbrush.AbstractToothbrush;
 import xyz.starchenpy.dental_handbook.common.item.toothpaste.AbstractToothpaste;
 import xyz.starchenpy.dental_handbook.common.util.NbtUtil;
 
-import static xyz.starchenpy.dental_handbook.DentalHandbook.MOD_ID;
-
-@Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ItemColorRegistry {
     @SubscribeEvent
     public static void registerColors(RegisterColorHandlersEvent.Item event) {

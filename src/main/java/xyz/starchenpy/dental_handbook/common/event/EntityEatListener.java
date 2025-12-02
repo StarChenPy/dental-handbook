@@ -7,6 +7,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.event.entity.living.LivingEntityUseItemEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 import xyz.starchenpy.dental_handbook.common.Config;
 import xyz.starchenpy.dental_handbook.common.ModDamageType;
 import xyz.starchenpy.dental_handbook.common.effect.ModEffects;
@@ -14,6 +15,7 @@ import xyz.starchenpy.dental_handbook.common.util.EffectUtil;
 
 import java.util.Random;
 
+@Mod.EventBusSubscriber
 public class EntityEatListener {
     @SubscribeEvent
     public static void entityEatFinishListener(LivingEntityUseItemEvent.Finish event) {

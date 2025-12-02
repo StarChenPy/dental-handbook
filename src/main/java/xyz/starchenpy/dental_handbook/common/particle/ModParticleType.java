@@ -4,6 +4,7 @@ import net.minecraft.core.particles.ParticleType;
 import net.minecraft.core.registries.Registries;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
+
 import java.util.function.Supplier;
 
 import static xyz.starchenpy.dental_handbook.DentalHandbook.MOD_ID;

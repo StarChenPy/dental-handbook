@@ -12,7 +12,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 import static xyz.starchenpy.dental_handbook.DentalHandbook.MOD_ID;
 
 public class BrushingTrigger extends SimpleCriterionTrigger<BrushingTrigger.TriggerInstance> {
-    static final ResourceLocation ID = new ResourceLocation(MOD_ID, "after_brushing_teeth");
+    static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath(MOD_ID, "after_brushing_teeth");
 
     @Nonnull
     @Override

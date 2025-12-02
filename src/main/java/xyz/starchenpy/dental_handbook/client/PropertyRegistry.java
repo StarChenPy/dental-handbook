@@ -9,26 +9,22 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.registries.RegistryObject;
 import xyz.starchenpy.dental_handbook.common.item.ModItems;
-import xyz.starchenpy.dental_handbook.common.item.toothbrush.AbstractToothbrush;
 import xyz.starchenpy.dental_handbook.common.item.toothpaste.AbstractToothpaste;
 import xyz.starchenpy.dental_handbook.common.util.NbtUtil;
 
 import static xyz.starchenpy.dental_handbook.DentalHandbook.MOD_ID;
 
-@Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD,value = Dist.CLIENT)
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class PropertyRegistry {
     /**
      * 为牙刷添加 property, 以控制牙膏显示与否
      */
     @SubscribeEvent
-    public static void propertyOverrideRegistry(FMLClientSetupEvent event){
+    public static void propertyOverrideRegistry(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
-            for (RegistryObject<Item> holder : ModItems.getAllModItem()) {
-                if (holder.get().asItem() instanceof AbstractToothbrush toothbrush) {
-                    ItemProperties.register(toothbrush, new ResourceLocation(MOD_ID,"has_toothpaste"),
-                            (stack, level, player, send)-> NbtUtil.getToothpaste(stack) instanceof AbstractToothpaste ? 1 : 0);
-
-                }
+            for (RegistryObject<Item> item : ModItems.getAllToothbrush()) {
+                ItemProperties.register(item.get(), ResourceLocation.fromNamespaceAndPath(MOD_ID,"has_toothpaste"),
+                        (stack, level, player, send) -> NbtUtil.getToothpaste(stack) instanceof AbstractToothpaste ? 1 : 0);
             }
         });
     }

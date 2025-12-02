@@ -1,4 +1,4 @@
-package xyz.starchenpy.dental_handbook.common.event;
+package xyz.starchenpy.dental_handbook.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
@@ -6,8 +6,10 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RenderHandEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 import org.joml.Matrix4f;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,6 +18,7 @@ import xyz.starchenpy.dental_handbook.common.item.toothpaste.AbstractToothpaste;
 import xyz.starchenpy.dental_handbook.common.util.MathUtil;
 import xyz.starchenpy.dental_handbook.common.util.NbtUtil;
 
+@Mod.EventBusSubscriber(Dist.CLIENT)
 public class ItemRenderListener {
     private static final Logger log = LoggerFactory.getLogger(ItemRenderListener.class);
     private static Matrix4f buffer;

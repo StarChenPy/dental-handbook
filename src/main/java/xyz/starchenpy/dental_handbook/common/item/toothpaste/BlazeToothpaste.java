@@ -6,16 +6,15 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import xyz.starchenpy.dental_handbook.common.effect.ModEffects;
 
-public class GoldenAppleToothpaste extends AbstractToothpaste {
-    public GoldenAppleToothpaste() {
-        super(new Item.Properties().durability(8), 4, 0xEAEE57);
+public class BlazeToothpaste extends AbstractToothpaste {
+    public BlazeToothpaste() {
+        super(new Item.Properties().durability(10), 4, 0xFFFFFFB5);
     }
 
     @Override
     public void effect(LivingEntity entity) {
         cleanTooth(entity);
-        entity.removeEffect(ModEffects.INJURY_ORAL.get());
-        entity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 3600, 0));
-        entity.addEffect(new MobEffectInstance(ModEffects.CLEAN_ORAL.get(), 9600));
+        entity.addEffect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 7200));
+        entity.addEffect(new MobEffectInstance(ModEffects.INJURY_ORAL.get(), 2400));
     }
 }

@@ -24,7 +24,7 @@ public class NbtUtil {
             return null;
         }
 
-        return BuiltInRegistries.ITEM.get(new ResourceLocation(toothpasteName));
+        return BuiltInRegistries.ITEM.get(ResourceLocation.parse(toothpasteName));
     }
 
     /**

@@ -22,6 +22,9 @@ public class ModEffects {
     public static final Supplier<MobEffect> CLEAN_ORAL = MOB_EFFECTS.register("clean_oral", () ->
             new ModEffect(MobEffectCategory.BENEFICIAL, 0xFFFF33));
 
+    public static final Supplier<MobEffect> ENDER_AFFINITY = MOB_EFFECTS.register("ender_affinity", () ->
+            new ModEffect(MobEffectCategory.BENEFICIAL, 0xC541E4));
+
     public static void register(IEventBus modEventBus) {
         MOB_EFFECTS.register(modEventBus);
     }
