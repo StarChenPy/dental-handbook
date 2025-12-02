@@ -96,6 +96,7 @@ public class AbstractToothbrush extends Item {
             NbtUtil.setToothpaste(itemStack, null);
             if (entity instanceof ServerPlayer player) {
                 player.getCooldowns().addCooldown(this, getCooldown());
+                itemStack.hurtAndBreak(1, player, (p) -> {});
                 ModTriggers.AFTER_BRUSHING_TEETH.trigger(player, itemStack);
             }
             return itemStack;
@@ -103,7 +104,7 @@ public class AbstractToothbrush extends Item {
 
         ItemStack toothpasteOnHand = entity.getMainHandItem() == itemStack ? entity.getOffhandItem() : entity.getMainHandItem();
         if (toothpasteOnHand.getItem() instanceof AbstractToothpaste item) {
-            toothpasteOnHand.hurtAndBreak(1, entity, (e) -> {});
+            toothpasteOnHand.hurtAndBreak(1, entity, (p) -> {});
             NbtUtil.setToothpaste(itemStack, item);
         }
 
