@@ -8,6 +8,7 @@ import net.minecraft.world.item.ItemStack;
 
 public class NbtUtil {
     public static final String TOOTHBRUSH_TOOTHPASTE_NBT = "toothpaste";
+    public static final String SELECTED_DENTURE_SLOT_NBT = "selected_denture_slot";
 
     /**
      * 从 NBT 获取牙膏
@@ -39,5 +40,25 @@ public class NbtUtil {
         } else {
             tag.putString(TOOTHBRUSH_TOOTHPASTE_NBT, BuiltInRegistries.ITEM.getKey(toothpaste).toString());
         }
+    }
+
+    /**
+     * 从 NBT 获取选择的假牙槽
+     * @param itemStack 牙科工具的 ItemStack
+     * @return  槽位
+     */
+    public static int getSelectedDentureSlot(ItemStack itemStack) {
+        CompoundTag tag = itemStack.getOrCreateTag();
+
+        return itemStack.getOrCreateTag().getInt(SELECTED_DENTURE_SLOT_NBT);
+    }
+
+    /**
+     * 从 DataComponent 设置选择的假牙槽
+     * @param itemStack 牙科工具的 ItemStack
+     */
+    public static void setSelectDentureSlot(ItemStack itemStack, int slot) {
+        CompoundTag tag = itemStack.getOrCreateTag();
+        tag.putInt(SELECTED_DENTURE_SLOT_NBT, slot);
     }
 }

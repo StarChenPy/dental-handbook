@@ -1,4 +1,4 @@
-package xyz.starchenpy.dental_handbook.client;
+package xyz.starchenpy.dental_handbook.client.event;
 
 import net.minecraft.client.color.item.ItemColor;
 import net.minecraft.world.item.Item;

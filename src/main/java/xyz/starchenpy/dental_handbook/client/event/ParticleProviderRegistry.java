@@ -1,4 +1,4 @@
-package xyz.starchenpy.dental_handbook.client;
+package xyz.starchenpy.dental_handbook.client.event;
 
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
