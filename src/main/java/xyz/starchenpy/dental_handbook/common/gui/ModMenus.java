@@ -7,7 +7,6 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
-
 import static xyz.starchenpy.dental_handbook.DentalHandbook.MOD_ID;
 
 public class ModMenus {

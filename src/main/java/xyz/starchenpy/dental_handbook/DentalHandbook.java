@@ -4,7 +4,6 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import xyz.starchenpy.dental_handbook.client.gui.ModScreens;
 import xyz.starchenpy.dental_handbook.common.Config;
 import xyz.starchenpy.dental_handbook.common.ModSounds;
 import xyz.starchenpy.dental_handbook.common.advancements.ModTriggers;
@@ -30,7 +29,6 @@ public class DentalHandbook {
         ModMenus.register(modEventBus);
         // 1.20.1 还只能通过这种方式注册成就触发器
         modEventBus.addListener(ModTriggers::register);
-        modEventBus.addListener(ModScreens::register);
 
         NetworkHandler.register();
 

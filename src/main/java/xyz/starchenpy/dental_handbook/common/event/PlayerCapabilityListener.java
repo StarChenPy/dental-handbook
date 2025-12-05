@@ -33,11 +33,9 @@ public class PlayerCapabilityListener {
         }
 
         event.getOriginal().reviveCaps();
-        event.getOriginal().getCapability(ModCapabilities.DENTURE_CAP).ifPresent(oldStore -> {
-            event.getEntity().getCapability(ModCapabilities.DENTURE_CAP).ifPresent(newStore -> {
-                newStore.deserializeNBT(oldStore.serializeNBT());
-            });
-        });
+        event.getOriginal().getCapability(ModCapabilities.DENTURE_CAP).ifPresent(
+                oldStore -> event.getEntity().getCapability(ModCapabilities.DENTURE_CAP).ifPresent(
+                        newStore -> newStore.deserializeNBT(oldStore.serializeNBT())));
         event.getOriginal().invalidateCaps();
     }
 
