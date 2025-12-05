@@ -6,6 +6,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.SimpleMenuProvider;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -21,6 +22,7 @@ import xyz.starchenpy.dental_handbook.common.util.NbtUtil;
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.Optional;
+import java.util.Random;
 
 public class DentalForceps extends Item {
     private static final Logger LOGGER = LogUtils.getLogger();
@@ -97,5 +99,22 @@ public class DentalForceps extends Item {
         }
 
         return true;
+    }
+
+    @Override
+    @ParametersAreNonnullByDefault
+    public boolean hurtEnemy(ItemStack pStack, LivingEntity pTarget, LivingEntity pAttacker) {
+
+        Random random = new Random();
+        if (random.nextInt(100) < 4) {
+            pTarget.spawnAtLocation(new ItemStack(ModItems.INCISOR.get()), 1.2f);
+        } else if (random.nextInt(100) < 4) {
+            pTarget.spawnAtLocation(new ItemStack(ModItems.CANINE.get()), 1.2f);
+        } else if (random.nextInt(100) < 6) {
+            pTarget.spawnAtLocation(new ItemStack(ModItems.MOLAR.get()), 1.2f);
+        } else if (random.nextInt(100) < 2) {
+            pTarget.spawnAtLocation(new ItemStack(ModItems.WISDOM.get()), 1.2f);
+        }
+        return super.hurtEnemy(pStack, pTarget, pAttacker);
     }
 }
