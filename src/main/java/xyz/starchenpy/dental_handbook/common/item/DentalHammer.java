@@ -6,7 +6,6 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.SimpleMenuProvider;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -67,19 +66,19 @@ public class DentalHammer extends Item {
         // 工具没选择假牙，跳过
         int slot = NbtUtil.getSelectedDentureSlot(inUseDentalTool);
         if (slot < 0) {
-            player.displayClientMessage(Component.literal("还未选择牙齿"), true);
+            player.displayClientMessage(Component.translatable("message.dental_handbook.dental_hammer.no_select_tooth"), true);
             return false;
         }
 
         // 另一只手没拿假牙，跳过
         if (denture.isEmpty()) {
-            player.displayClientMessage(Component.literal("需要一颗牙..."), true);
+            player.displayClientMessage(Component.translatable("message.dental_handbook.dental_hammer.need_tooth"), true);
             return false;
         }
         if (!(denture.getItem() instanceof Denture)) return false;
 
         if (DentureMenu.getSlotDentureType(slot) != ((Denture) denture.getItem()).getType()) {
-            player.displayClientMessage(Component.literal("选定的位置不适合这颗牙"), true);
+            player.displayClientMessage(Component.translatable("message.dental_handbook.dental_hammer.unhappy"), true);
             return false;
         }
 
@@ -100,7 +99,7 @@ public class DentalHammer extends Item {
 
         // 选择的假牙槽已经有牙，跳过
         if (!data.getStackInSlot(slot).isEmpty()) {
-            player.displayClientMessage(Component.literal("选定的位置有一颗牙了"), true);
+            player.displayClientMessage(Component.translatable("message.dental_handbook.dental_hammer.already_exists"), true);
             return false;
         }
 

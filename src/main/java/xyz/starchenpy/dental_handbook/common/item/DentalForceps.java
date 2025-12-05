@@ -62,7 +62,7 @@ public class DentalForceps extends Item {
         // 工具没选择假牙，跳过
         int slot = NbtUtil.getSelectedDentureSlot(itemInHand);
         if (slot < 0) {
-            player.displayClientMessage(Component.literal(" 还未选择牙齿!"), true);
+            player.displayClientMessage(Component.translatable("message.dental_handbook.dental_forceps.no_select_tooth"), true);
             return false;
         }
 
@@ -82,7 +82,7 @@ public class DentalForceps extends Item {
         ItemStackHandler data = resolve.get().getHandler();
         // 选择的假牙槽没有牙，跳过
         if (data.getStackInSlot(slot).isEmpty()) {
-            player.displayClientMessage(Component.literal(" 选定的位置没有牙！"), true);
+            player.displayClientMessage(Component.translatable("message.dental_handbook.dental_forceps.no_tooth"), true);
             return false;
         }
 
