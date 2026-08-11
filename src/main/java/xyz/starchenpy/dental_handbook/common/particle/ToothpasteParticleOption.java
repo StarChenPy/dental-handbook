@@ -10,11 +10,12 @@ import net.minecraft.core.particles.ParticleType;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.registries.ForgeRegistries;
 
 import javax.annotation.Nonnull;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-public class ToothpasteParticleOption implements ParticleOptions {
+public record ToothpasteParticleOption(ItemStack itemStack) implements ParticleOptions {
     public static final Deserializer<ToothpasteParticleOption> DESERIALIZER = new Deserializer<>() {
         @Nonnull
         @Override
@@ -33,14 +34,13 @@ public class ToothpasteParticleOption implements ParticleOptions {
             return new ToothpasteParticleOption(byteBuf.readItem());
         }
     };
-    private final ItemStack itemStack;
 
     public static Codec<ToothpasteParticleOption> codec() {
         return ItemStack.CODEC.xmap(ToothpasteParticleOption::new, from -> from.itemStack);
     }
 
-    public ToothpasteParticleOption(ItemStack pItemStack) {
-        this.itemStack = pItemStack.copy();
+    public ToothpasteParticleOption(ItemStack itemStack) {
+        this.itemStack = itemStack.copy();
     }
 
     @Override
@@ -51,7 +51,7 @@ public class ToothpasteParticleOption implements ParticleOptions {
     @Nonnull
     @Override
     public String writeToString() {
-        return BuiltInRegistries.PARTICLE_TYPE.getKey(this.getType())
+        return ForgeRegistries.PARTICLE_TYPES.getKey(this.getType())
                 + " "
                 + new ItemInput(this.itemStack.getItemHolder(), this.itemStack.getTag()).serialize();
     }

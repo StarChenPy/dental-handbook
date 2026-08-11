@@ -48,8 +48,6 @@ public class NbtUtil {
      * @return  槽位
      */
     public static int getSelectedDentureSlot(ItemStack itemStack) {
-        CompoundTag tag = itemStack.getOrCreateTag();
-
         return itemStack.getOrCreateTag().getInt(SELECTED_DENTURE_SLOT_NBT);
     }
 
@@ -58,7 +56,6 @@ public class NbtUtil {
      * @param itemStack 牙科工具的 ItemStack
      */
     public static void setSelectDentureSlot(ItemStack itemStack, int slot) {
-        CompoundTag tag = itemStack.getOrCreateTag();
-        tag.putInt(SELECTED_DENTURE_SLOT_NBT, slot);
+        itemStack.getOrCreateTag().putInt(SELECTED_DENTURE_SLOT_NBT, slot);
     }
 }

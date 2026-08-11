@@ -6,17 +6,23 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.SimpleMenuProvider;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.common.util.LazyOptional;
 import net.minecraftforge.items.ItemStackHandler;
 import org.slf4j.Logger;
+import xyz.starchenpy.dental_handbook.common.ModDamageType;
 import xyz.starchenpy.dental_handbook.common.capability.DentureStorage;
 import xyz.starchenpy.dental_handbook.common.capability.ModCapabilities;
+import xyz.starchenpy.dental_handbook.common.effect.ModEffects;
 import xyz.starchenpy.dental_handbook.common.gui.DentureMenu;
 import xyz.starchenpy.dental_handbook.common.item.denture.Denture;
+import xyz.starchenpy.dental_handbook.common.util.CapabilityUtil;
 import xyz.starchenpy.dental_handbook.common.util.NbtUtil;
 
 import javax.annotation.Nonnull;
@@ -28,6 +34,22 @@ public class DentalHammer extends Item {
 
     public DentalHammer() {
         super(new Properties().stacksTo(1));
+    }
+
+    /**
+     * 使用自定义动画应返回 CUSTOM
+     */
+    @Nonnull
+    @Override
+    @ParametersAreNonnullByDefault
+    public UseAnim getUseAnimation(ItemStack itemStack) {
+        return UseAnim.EAT;
+    }
+
+    @Override
+    @ParametersAreNonnullByDefault
+    public int getUseDuration(ItemStack itemStack) {
+        return 40;
     }
 
     @Nonnull
@@ -44,12 +66,13 @@ public class DentalHammer extends Item {
                         Component.translatable("menu.title.dental_handbook.select_tooth")));
                 return InteractionResultHolder.success(itemInHand);
             } else {
-                if (this.toothImplantation(player, usedHand)) {
-                    return InteractionResultHolder.success(itemInHand);
+                if (this.verifyToothImplantation(player, usedHand)) {
+                    player.startUsingItem(usedHand);
+                    return InteractionResultHolder.pass(itemInHand);
                 }
             }
         }
-        return InteractionResultHolder.pass(itemInHand);
+        return InteractionResultHolder.fail(itemInHand);
     }
 
     /**
@@ -57,7 +80,7 @@ public class DentalHammer extends Item {
      * @param player    玩家
      * @param usedHand  使用工具的手
      */
-    private boolean toothImplantation(Player player, InteractionHand usedHand) {
+    private boolean verifyToothImplantation(Player player, InteractionHand usedHand) {
         ItemStack inUseDentalTool = player.getItemInHand(usedHand);
         // 取相反的手中的假牙
         InteractionHand dentureHead = usedHand == InteractionHand.MAIN_HAND ? InteractionHand.OFF_HAND : InteractionHand.MAIN_HAND;
@@ -103,11 +126,31 @@ public class DentalHammer extends Item {
             return false;
         }
 
-        data.insertItem(slot, denture.copy(), false);
-        if (!player.getAbilities().instabuild) {
-            denture.shrink(1);
-        }
-
         return true;
+    }
+
+    @Nonnull
+    @Override
+    @ParametersAreNonnullByDefault
+    public ItemStack finishUsingItem(ItemStack pStack, Level pLevel, LivingEntity pLivingEntity) {
+        if (pLivingEntity instanceof Player player) {
+            // 取相反的手中的假牙
+            InteractionHand dentureHead = player.getUsedItemHand() == InteractionHand.MAIN_HAND ? InteractionHand.OFF_HAND : InteractionHand.MAIN_HAND;
+            ItemStack denture = player.getItemInHand(dentureHead);
+            int slot = NbtUtil.getSelectedDentureSlot(pStack);
+
+            ItemStackHandler data = CapabilityUtil.getDenture(player);
+            if (data == null) return super.finishUsingItem(pStack, pLevel, pLivingEntity);
+
+            data.insertItem(slot, denture.copy(), false);
+            if (!player.getAbilities().instabuild) {
+                denture.shrink(1);
+                player.hurt(player.damageSources().source(ModDamageType.ORAL_BLEEDING), 6);
+                player.addEffect(new MobEffectInstance(ModEffects.INJURY_ORAL.get(), 1800));
+            }
+
+            player.getCooldowns().addCooldown(this, 10);
+        }
+        return super.finishUsingItem(pStack, pLevel, pLivingEntity);
     }
 }
